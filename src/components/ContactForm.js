@@ -1,0 +1,130 @@
+import React from 'react'
+import { withRouter} from 'react-router-dom'
+import {Form, Header} from 'semantic-ui-react'
+import emailjs from 'emailjs-com'
+require('dotenv').config()
+
+
+class ContactForm extends React.Component {
+  state = {
+           name: '',
+           email: '',
+           dates: '',
+           message: '',
+           numGuests: 0,
+  }
+
+
+  resetForm() {
+    this.setState({
+      name: '',
+      email: '',
+      dates: 'mm/dd/yyyy',
+      message: '',
+      numGuests: 0, 
+    })
+    alert("Message Sent")
+    this.props.history.push("/")
+  }
+  
+  handleFailToSend = () => {
+    window.open('mailto:seanpalmer155@gmail.com?subject=Quote Request');
+    this.props.history.push("/")
+  }
+ 
+handleChange = (e) => {
+  this.setState({ [e.target.name]: e.target.value, })
+}
+
+handleSubmit = (e) => {
+  e.preventDefault();
+ const {name, email, message} = this.state
+
+ let templateParams = {
+  from_name: name,
+  from_email: email,
+  to_name: 'Sean Palmer',
+  message_html: message,
+ }
+
+ emailjs.send('sipnstir', "sipnstir", templateParams, "user_DPXyyf8OCsq80vNDZsRU8"
+ ).then((response) => {
+  if (response.status === 200) {
+    this.resetForm()
+  }
+ console.log('SUCCESS!', response.status, response.text);
+ }, (err) => {
+   if (err) {
+     alert("Sorry Message Failed at this time")
+     this.handleFailToSend()
+   }
+  console.log('FAILED...', err);
+ })
+}
+
+
+
+  render() {
+   return(
+     <Form onSubmit={this.handleSubmit}>
+      <Header as="h5">Request Quote</Header>
+      <Form.Group>
+         <Form.Input
+         placeholder= "Name"
+         label="Name"
+         name="name"
+         onChange={this.handleChange}
+         value={this.state.name}
+         required
+         />
+         <Form.Input
+         placeholder= "Email"
+         label="Email"
+         name="email"
+         onChange={this.handleChange}
+         value={this.state.email}
+         required
+         />
+         </Form.Group>
+         <Form.Group>
+        <Form.Input
+         name="dates"
+         label="Date of Event"
+         type="date"
+         value={this.state.date}
+         onChange={this.handleChange}
+         required
+         >
+         </Form.Input>
+        <Form.Input
+         name="numGuests"
+         label="Number of Guests"
+         type="number"
+         min= "1"
+         placeholder="1"
+         value={this.state.numGuests}
+         onChange={this.handleChange}
+         required
+         >
+         </Form.Input>
+         </Form.Group>
+         <Form.TextArea
+         placeholder= "Message"
+         label="Message"
+         name="message"
+         size="medium"
+         onChange={this.handleChange}
+         value={this.state.message}
+         required
+         />
+         <Form.Button color="green">Submit</Form.Button>
+       
+       
+      </Form>
+
+    )
+    }
+  }
+  
+
+export default withRouter(ContactForm)

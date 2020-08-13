@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Route, Switch, } from "react-router-dom";
+import Home from './components/Home'
+import Contact from './components/Contact'
+import Services from './components/Services'
+import Events from './components/Events'
+import FAQ from './components/Faq'
+import NoMatch from './components/NoMatch'
+import Navi from './components/NavBar.js'
+import Footer from './components/FooterAlt'
+import ScrollToTop from './components/scrollToTop'
+
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+  
+   <Navi/>
+   <ScrollToTop/>
+     <Switch>
+      <Route exact path='/' component={Home} />
+      <Route exact path='/Contact' component={Contact} />
+      <Route exact path='/Services' component={Services} />
+      <Route exact path='/Events' component={Events} />
+      <Route exact path='/FAQ' component={FAQ} />
+      <Route component={NoMatch} />
+     </Switch>
+    
+   <Footer/>
+ </>
   );
 }
 
 export default App;
+
