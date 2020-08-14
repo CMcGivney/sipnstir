@@ -1,6 +1,7 @@
 import React from 'react'
-import {Header, Icon} from 'semantic-ui-react'
+import {Header, Icon, Image} from 'semantic-ui-react'
 import SocialFollow from './SocialFollows'
+import SipLogo from "../images/SipLogo.PNG"
 
 class Footer extends React.Component {
 
@@ -10,7 +11,11 @@ class Footer extends React.Component {
         <>
         <div className="footerFlex">
           <div className='mainFooter'>
-           <Header as="h2">Park City Sip & Stir</Header>
+          <Image
+         src= {SipLogo}
+         alt= "Sip & Stir Logo"
+         size= "small"
+         />
           </div>
           <div className='phoneNum'>
             <Header.Content as="h4">
