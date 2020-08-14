@@ -22,7 +22,7 @@ faqsArray.push(wineClass)
 
 const Faq = () => (
   <div className="faqs">
-    <Header.Content as="h1" style={{marginTop: "5rem", textAlign: 'center'}}>Frequently Ask Questions</Header.Content>
+    <Header.Content as="h1" style={{marginTop: "6rem", textAlign: 'center'}}>Frequently Ask Questions</Header.Content>
   <div className="faqContainer">
     <Card.Group className="cardContainer" stackable>
      {faqsArray.map( (qa, index) => 

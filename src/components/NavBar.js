@@ -48,7 +48,7 @@ class Navbar extends React.Component {
               <Image
               size='tiny' 
               src={Logo} 
-              alt="ABS Seafood Logo"
+              alt="Sip & Stir Logo"
              />
             </Menu.Item>
           </Link>
@@ -77,14 +77,14 @@ class Navbar extends React.Component {
               active={this.props.location.pathname === '/Services'}
              />
             </Link>
-            <Link to='/Events'>
+            {/* <Link to='/Events'>
              <Menu.Item
               name='Events'
               id='Events'
               as='h4'
               active={this.props.location.pathname === '/Events'}
              />
-            </Link>
+            </Link> */}
             <Link to='/FAQ'>
              <Menu.Item
               name='FAQ'

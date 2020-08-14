@@ -62,13 +62,13 @@ class DropDownMenu extends React.Component {
                 active={this.props.location.pathname === '/Contact'}>Contact
               </Dropdown.Item>
               </Link>
-              <Link to='/Events'>
+              {/* <Link to='/Events'>
               <Dropdown.Item 
                  name='Events'
                 id='Events'
                 active={this.props.location.pathname === '/Events'}>Events
               </Dropdown.Item>
-              </Link>
+              </Link> */}
               <Link to='/FAQ'>
               <Dropdown.Item 
                    name='FAQ'
