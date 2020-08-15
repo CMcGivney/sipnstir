@@ -3,7 +3,7 @@ import {Header, Image} from 'semantic-ui-react'
 import Twitter from './Twitter.js'
 import Cocktail from '../images/cocktail.jpg'
 import { Parallax,} from 'react-parallax';
-import SipLogo from "../images/SipLogo.PNG"
+import SipLogo from "../images/Sip&Stir_noBackground.png"
 
 
 const insideStyles = {
@@ -17,7 +17,7 @@ const insideStyles = {
    display: 'flex',
    flexDirection: 'column',
    justifyContent: 'center',
-   opacity: '0.6'
+   
    
  };
 

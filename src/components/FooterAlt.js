@@ -1,7 +1,7 @@
 import React from 'react'
 import {Header, Icon, Image} from 'semantic-ui-react'
 import SocialFollow from './SocialFollows'
-import SipLogo from "../images/SipLogo.PNG"
+import SipLogo from "../images/Sip&Stir_noBackground.png"
 
 class Footer extends React.Component {
 
