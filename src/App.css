@@ -39,7 +39,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgb(85, 61, 61);
+  width: 100%;
   color: white;
   min-height: 60em;
  
@@ -167,7 +167,7 @@ a.email:hover {
 
 /*FAQ Page style*/
 .faqs {
-  height: 90vh;
+  height: 95vh;
   margin-top: 6rem;
   width: 100%;
   justify-content: center;
@@ -213,11 +213,7 @@ a.email:hover {
   justify-content: center;
 }
 /*Footer style*/
-.footer {
-  position: absolute;
-  width: 100%;
-  height: 5rem;
-}
+
 .footerFlex {
   justify-content: center;
   align-items: center;
@@ -227,6 +223,12 @@ a.email:hover {
   width: 100%;
   flex-flow: row wrap;
   padding: 1em;
+}
+
+.footerBottom {
+  display: flex;
+  flex-flow: row wrap;
+  
 }
 
 .mainFooter {

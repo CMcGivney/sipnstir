@@ -17,6 +17,7 @@ const insideStyles = {
    display: 'flex',
    flexDirection: 'column',
    justifyContent: 'center',
+   opacity: '0.6'
    
  };
 
