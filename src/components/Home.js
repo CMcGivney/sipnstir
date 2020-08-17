@@ -1,9 +1,10 @@
 import React from 'react'
-import {Header, Image} from 'semantic-ui-react'
+import {Link} from 'react-router-dom'
+import {Header, Image, Button} from 'semantic-ui-react'
 import Twitter from './Twitter.js'
 import Cocktail from '../images/cocktail.jpg'
 import { Parallax,} from 'react-parallax';
-import SipLogo from "../images/Sip&Stir_noBackground.png"
+import SipLogo from "../images/Sip&Stir_Black.png"
 
 
 const insideStyles = {
@@ -41,7 +42,10 @@ const Home = () => (
   <div className="homeContentGrid ">
      <div className='about'>
       <Header.Content as="h3" style={{padding: "1rem 1rem 1rem 1rem"}} >"Let us bring the Michelin hospitality experience to you!"</Header.Content>
-      <Header.Content as="p">In home hospitality, events, wine education, cellar management</Header.Content>
+      <Header.Content as="p">In home hospitality, special events, wine education, cellar management</Header.Content>
+        <Link to="/contact">
+         <Button>Request Quote</Button>
+        </Link>
      </div>
      <div className='col-2'>
      <Header.Content as="h3" >Reviews maybe here </Header.Content>

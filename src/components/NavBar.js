@@ -2,7 +2,7 @@ import React from 'react'
 import {Link, withRouter} from 'react-router-dom'
 import {Menu, Image} from 'semantic-ui-react'
 import DropDownMenu from './DropDownMenu.js'
-import Logo from '../images/SipLogo.PNG'
+import Logo from '../images/Sip&Stir_White.png'
 
 const navStyles = {
   padding: '1rem',
@@ -63,7 +63,7 @@ class Navbar extends React.Component {
              </Link>
             <Link to='/Contact'>
              <Menu.Item
-              name='Contact'
+              name='Quote'
               id='contact'
               as='h4'
               active={this.props.location.pathname === '/Contact'}

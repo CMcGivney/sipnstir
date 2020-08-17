@@ -6,7 +6,7 @@ import ContactForm from './ContactForm'
 const Contact = () => (
  <>
   <div className="contact">
-  <Header.Content className="headerCont" as="h1">Lets Connect</Header.Content>
+  <Header.Content className="headerCont" as="h1">Lets Connect, Request A Quote</Header.Content>
     <ContactForm/>
    </div>
        

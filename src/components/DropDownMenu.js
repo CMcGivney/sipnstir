@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link, withRouter} from 'react-router-dom'
 import {Menu, Dropdown, Image, Container} from 'semantic-ui-react'
-import Logo from '../images/SipLogo.PNG'
+import Logo from '../images/Sip&Stir_White.png'
 
 
 class DropDownMenu extends React.Component {
@@ -57,9 +57,9 @@ class DropDownMenu extends React.Component {
               </Link>
               <Link to='/Contact'>
               <Dropdown.Item 
-                 name='Contact'
-                id='Contact'
-                active={this.props.location.pathname === '/Contact'}>Contact
+                 name='Quote'
+                id='contact'
+                active={this.props.location.pathname === '/Contact'}>Quote
               </Dropdown.Item>
               </Link>
               {/* <Link to='/Events'>

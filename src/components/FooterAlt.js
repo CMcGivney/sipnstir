@@ -1,7 +1,7 @@
 import React from 'react'
 import {Header, Icon, Image} from 'semantic-ui-react'
 import SocialFollow from './SocialFollows'
-import SipLogo from "../images/Sip&Stir_noBackground.png"
+import SipLogo from "../images/Sip&Stir_Black.png"
 
 class Footer extends React.Component {
 
@@ -38,7 +38,7 @@ class Footer extends React.Component {
           <div className='emailBox'>
             <Header.Content as='h4'>
               <Icon name="mail"/>
-              <a className="email" href="mailto:SeanPalmer@gmail.com">SeanPalmer155@gmail.com</a>
+              <a className="email" href="mailto:sipandstirpc@gmail.com">SipAndStirPC@gmail.com</a>
               </Header.Content>
          </div>
           <div className='socialFollows'>

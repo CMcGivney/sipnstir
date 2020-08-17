@@ -16,7 +16,7 @@ export default function SocialFollow() {
          <Icon size="big" name="instagram" />
       </a>
       <a
-        href="https://www.facebook.com/profile.php?id=48500872/"
+        href="https://www.facebook.com/sean.palmer.71"
         className="facebook social"
       >
         <Icon name="facebook" size="big" />
