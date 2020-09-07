@@ -9,13 +9,12 @@ import NoMatch from './components/NoMatch'
 import Navi from './components/NavBar.js'
 import Footer from './components/FooterAlt'
 import ScrollToTop from './components/scrollToTop'
-import {Container, } from "semantic-ui-react"
+// import {Container, } from "semantic-ui-react"
 import './App.css'
 
 function App() {
   return (
   <>
-  <Container fluid>
    <Navi/>
    <ScrollToTop/>
      <Switch>
@@ -26,7 +25,6 @@ function App() {
       <Route exact path='/FAQ' component={FAQ} />
       <Route component={NoMatch} />
      </Switch>
-     </Container> 
    <Footer/>
  </>
   );

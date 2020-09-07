@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {Header, Image, Button} from 'semantic-ui-react'
+import {Header, Image, Button, Container} from 'semantic-ui-react'
 import Twitter from './Twitter.js'
 import Cocktail from '../images/cocktail.jpg'
 import { Parallax,} from 'react-parallax';
@@ -23,6 +23,7 @@ const insideStyles = {
 const Home = () => (
  <>
      <Parallax
+      style={{padding: '0', width: '100vw', }}
       bgImage={Cocktail}
       bgImageAlt="A cocktail being poured over ice"
       strength={-300}

@@ -8,9 +8,8 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  width: 100%;
   min-height: 100vh;
-
+  
 }
 
 .title {
@@ -49,7 +48,7 @@ grid-area: about;
 background-color: black;
 padding: 2.5em 1rem 1rem 1rem;
 min-height: 18rem;
-width: 100%;
+width: 100vw;
 }
 .col-3 {
   grid-area: twitter;
