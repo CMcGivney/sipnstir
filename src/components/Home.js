@@ -47,9 +47,6 @@ const Home = () => (
          <Button>Request Quote</Button>
         </Link>
      </div>
-     <div className='col-2'>
-     <Header.Content as="h3" >Reviews maybe here </Header.Content>
-      </div>
       <div className='col-3'>
       <Twitter/>
      </div>

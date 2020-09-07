@@ -1,6 +1,6 @@
 import React from 'react'
 import { withRouter} from 'react-router-dom'
-import {Form, Header} from 'semantic-ui-react'
+import {Form,} from 'semantic-ui-react'
 import emailjs from 'emailjs-com'
 require('dotenv').config()
 
@@ -47,9 +47,8 @@ class ContactForm extends React.Component {
     this.props.history.push("/")
   }
  
-handleChange = (e) => {
-  this.setState({ [e.target.name]: e.target.value, })
-}
+  handleChange = (e, { name, value }) => 
+  this.setState({ [name]: value, });
 
 handleSubmit = (e) => {
   e.preventDefault();
@@ -111,9 +110,9 @@ handleSubmit = (e) => {
          required
          />
          <Form.Input
-         placeholder= "1 (xxx)-xxx-xxxx"
+         placeholder= "(xxx)-xxx-xxxx"
          type='tel'
-         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+         pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
          label="Phone"
          name="phone"
          onChange={this.handleChange}
@@ -143,8 +142,8 @@ handleSubmit = (e) => {
           >
          </Form.Input>
          <Form.Select
-          placeholder="Type of Event"
-          label="Type of Event"
+          label='Type of Event'
+          name="typeOfEvent"
           options={typeOfEventOptions}
           value={this.state.typeOfEvent}
           onChange={this.handleChange}
@@ -177,7 +176,7 @@ handleSubmit = (e) => {
           label="Location of Event"
           value={this.state.location}
           onChange={this.handleChange}
-           required
+          required
           >
          </Form.Input>
        </Form.Group>
