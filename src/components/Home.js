@@ -23,7 +23,6 @@ const insideStyles = {
 const Home = () => (
  <>
      <Parallax
-      style={{padding: '0', width: '100vw', }}
       bgImage={Cocktail}
       bgImageAlt="A cocktail being poured over ice"
       strength={-300}
@@ -41,7 +40,8 @@ const Home = () => (
   <div className="homeContentGrid ">
      <div className='about'>
       <Header.Content as="h3" style={{padding: "1rem 1rem 0 1rem"}} >"Let us create an elevated cocktail and wine experience for your home, private event, or corporate function."</Header.Content>
-      <Header.Content as="p" style={{marginBottom: "2rem"}}>~Sean Palmer, Chief Mixologist, Sommelier and Founder~</Header.Content>
+      <Header.Content as="h4" style={{marginBottom: '0px'}}>~ Sean Palmer ~</Header.Content>
+      <Header.Content as="p" style={{marginBottom: "2rem"}}>Chief Mixologist, Sommelier and Founder</Header.Content>
         <Link to="/contact">
          <Button >Request Quote</Button>
         </Link>
