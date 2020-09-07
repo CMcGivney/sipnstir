@@ -2,7 +2,7 @@ import React from 'react';
 import {Route, Switch, } from "react-router-dom";
 import Home from './components/Home'
 import Contact from './components/Contact'
-import Services from './components/Services'
+// import Services from './components/Services'
 import Events from './components/Events'
 import FAQ from './components/Faq'
 import NoMatch from './components/NoMatch'

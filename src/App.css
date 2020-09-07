@@ -40,7 +40,7 @@ body {
   text-align: center;
   width: 100%;
   color: white;
-  min-height: 60em;
+  min-height: 50em;
  
 }
 
@@ -54,12 +54,7 @@ width: 100%;
 .col-3 {
   grid-area: twitter;
   width: auto;
-  /* justify-self: center; */
   padding: 1rem;
-}
-.col-2 {
-  grid-area: awards;
-
 }
 
 /*Contact Page Style & Layout*/
@@ -241,6 +236,17 @@ a.email:hover {
 /*Footer style*/
 
 .footerFlex {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #294f22;
+  display: flex;
+  width: 100%;
+  flex-flow: column wrap;
+  padding: 1em;
+}
+
+.footerData {
   justify-content: center;
   align-items: center;
   text-align: center;

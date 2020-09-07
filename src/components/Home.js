@@ -17,9 +17,7 @@ const insideStyles = {
    height: '30rem',
    display: 'flex',
    flexDirection: 'column',
-   justifyContent: 'center',
-   
-   
+   justifyContent: 'center', 
  };
 
 const Home = () => (

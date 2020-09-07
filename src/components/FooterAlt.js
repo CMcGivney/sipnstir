@@ -11,13 +11,14 @@ class Footer extends React.Component {
         <>
         <div className="footerFlex">
           <div className='mainFooter'>
-          <Image
-         src= {SipLogo}
-         alt= "Sip & Stir Logo"
-         size= "small"
-         />
+           <Image
+            src= {SipLogo}
+            alt= "Sip & Stir Logo"
+            size= "small"
+           />
           </div>
-          <div className='phoneNum'>
+        <div className="footerData">
+           <div className='phoneNum'>
             <Header.Content as="h4">
               <Icon name="phone"/>
               <a className="email" href="tel:+1-301-992-7829">1-(301)-992-7829</a>
@@ -30,8 +31,8 @@ class Footer extends React.Component {
                className="email"  
                target="_blank" 
                rel="noopener noreferrer" 
-               href="https://www.google.com/maps/place/Chartreuse+Diffusion+-+Chartreuse+Cellars/@45.2200382,5.2107894,7.57z/data=!4m5!3m4!1s0x478ae4465ad2c337:0x924f959dd7105812!8m2!3d45.362011!4d5.5978889?hl=en&authuser=0"
-               >Your Business address Click Me!
+               href="https://www.google.com/maps/place/347+Keetly+Station+Cir,+Heber+City,+UT+84032/@40.6555831,-111.4101602,18z/data=!3m1!4b1!4m5!3m4!1s0x87520d95d8f3e183:0xcb108bcc4af3288d!8m2!3d40.655582!4d-111.409587"
+               >347 Keetly Station Circle Heber City, UT 84032
              </a>
             </Header.Content>
            </div>
@@ -40,16 +41,14 @@ class Footer extends React.Component {
               <Icon name="mail"/>
               <a className="email" href="mailto:sipandstirpc@gmail.com">SipAndStirPC@gmail.com</a>
               </Header.Content>
-         </div>
-          <div className='socialFollows'>
+           </div>
+          </div>
+           <div className='socialFollows'>
             <Header.Content>
              <SocialFollow/>
             </Header.Content>
-          </div>
-             {/* <Header.Content className="poweredBy">
-              Powered by: <a className="email" href="https://chris-portfo.herokuapp.com/">84Creations</a>
-             </Header.Content> */}
-          <div className="footerBottom">
+           </div>
+           <div className="footerBottom">
              <Header.Content>
              © 2020 Sip & Stir Park City, Utah, all rights reserved.
              </Header.Content>
@@ -57,6 +56,9 @@ class Footer extends React.Component {
         </div>
         </>
     )
-    }
   }
-    export default Footer
+}
+export default Footer
+/* <Header.Content className="poweredBy">
+ Powered by: <a className="email" href="https://chris-portfo.herokuapp.com/">84Creations</a>
+</Header.Content> */
