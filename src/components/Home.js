@@ -39,10 +39,10 @@ const Home = () => (
   
   <div className="homeContentGrid ">
      <div className='about'>
-      <Header.Content as="h3" style={{padding: "1rem 1rem 1rem 1rem"}} >"Let us create an elevated cocktail and wine experience for your home, private event, or corporate function."</Header.Content>
-      <Header.Content as="p">Bar hospitality, special events, wine education, cellar management</Header.Content>
+      <Header.Content as="h3" style={{padding: "1rem 1rem 0 1rem"}} >"Let us create an elevated cocktail and wine experience for your home, private event, or corporate function."</Header.Content>
+      <Header.Content as="p" style={{marginBottom: "2rem"}}>~Sean Palmer, Chief Mixologist, Sommelier and Founder~</Header.Content>
         <Link to="/contact">
-         <Button>Request Quote</Button>
+         <Button >Request Quote</Button>
         </Link>
      </div>
       <div className='col-3'>
