@@ -27,7 +27,7 @@ const Home = () => (
      title="Sip & Stir Bar Services"
      meta= {[
        {"name":"description", "content":"Sip & Stir is a bartending service based in Park City. Our bartenders service weddings and other events throughout Utah. Call for your quote today!"},
-       {property: "og:url", content: "http://sipandstirpc.com/"}
+       {property: "og:url", content: "https://sipandstirpc.com/"}
        ]}
       />
 
@@ -48,8 +48,10 @@ const Home = () => (
   
   <div className="homeContentGrid ">
      <div className='about'>
-      <Header.Content as="h3" style={{padding: "1rem 1rem 0 1rem"}} >"Let us create an elevated cocktail and wine experience for your home, private event, or corporate function."</Header.Content>
-      <Header.Content as="h4" style={{marginBottom: '0px'}}>~ Sean Palmer ~</Header.Content>
+      <Header.Content as="h1" style={{padding: "1rem 1rem 0 1rem"}} >Welcome to Sip & Stir Bar Services</Header.Content>
+      <Header.Content as="p" style={{padding: "1rem 5rem 0 5rem"}} >At Sip & Stir, we are committed to creating an elevated bar experience for your special event. Organizing an event is hard enough, with many moving parts to put together before the big day, why not let us take charge of the beverages so you can focus on your guests and enjoy yourself. </Header.Content>
+      <Header.Content as="h4" style={{margin: "0px", padding: "1rem 1rem 0 1rem"}} >"Let us create an elevated cocktail and wine experience for your home, private event, or corporate function."</Header.Content>
+      <Header.Content as="h4" style={{margin: '0px '}}>~ Sean Palmer ~</Header.Content>
       <Header.Content as="p" style={{marginBottom: "2rem"}}>Chief Mixologist, Sommelier and Founder</Header.Content>
         <Link to="/contact">
          <Button >Request Quote</Button>

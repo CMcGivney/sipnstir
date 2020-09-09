@@ -27,12 +27,13 @@ body {
   font-family: 'Roboto', serif;
 }
 .homeContentGrid {
-  display: grid;
-  grid-template-rows: 1fr auto;
+  display: flex;
+  flex-flow: column nowrap;
+  /* grid-template-rows: 1fr auto;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-template-areas: "about" 
                        "twitter" ;
-  grid-gap: 1em;
+  grid-gap: 1em; */
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -43,10 +44,11 @@ body {
 }
 
 .about {
-grid-area: about;
+display: flex;
+flex-flow: column wrap;
 background-color: black;
 padding: 1rem 1rem 1rem 1rem;
-min-height: 18rem;
+min-height: 20rem;
 width: 100vw;
 }
 .col-3 {
