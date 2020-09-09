@@ -1,5 +1,6 @@
 import React from 'react'
 import {Header, Card,} from 'semantic-ui-react'
+import {Helmet} from 'react-helmet'
 
 class FAQS {
   constructor(question, answer) {
@@ -21,6 +22,11 @@ wineClass = new FAQS("Q: Do you offer wine education?", "A: Yes we offer wine ed
 faqsArray.push(wineClass)
 
 const Faq = () => (
+  <>
+   <Helmet>
+    <title>Sip & Stir Bar Services FAQ</title>
+    <meta name="description" content="Sip & Stir is a bartending service based in Park City. Our bartenders service weddings and other events throughout Utah. Call for your quote today!" />
+   </Helmet>
   <div className="faqs">
     <Header.Content as="h1" style={{marginTop: "6rem", textAlign: 'center'}}>Frequently Ask Questions</Header.Content>
   <div className="faqContainer">
@@ -35,6 +41,7 @@ const Faq = () => (
     </Card.Group>
    </div>
   </div>
+  </>
 )
 
 export default Faq;
