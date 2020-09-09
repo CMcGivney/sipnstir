@@ -44,15 +44,42 @@ body {
 }
 
 .about {
-display: flex;
-flex-flow: column wrap;
-background-color: black;
-padding: 1rem 1rem 1rem 1rem;
-min-height: 20rem;
-width: 100vw;
+  display: flex;
+  flex-flow: column wrap;
+  background-color: black;
+  padding: 1rem 1rem;
+  min-height: 20rem;
+  width: 100vw;
+  text-align: center
+}
+.history {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: black;
+  padding: 2rem 1rem;
+  min-height: 20rem;
+  width: 100vw;
+  text-align: justify
+}
+
+
+.meetMe {
+  background-color: black;
+  padding: 2rem 1rem;
+  min-height: 20rem;
+  width: 100vw;
+  text-align: justify;
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+}
+.meetMeContent {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 2rem 1rem;
+  text-align: center
 }
 .col-3 {
-  grid-area: twitter;
   width: auto;
   padding: 1rem;
 }
