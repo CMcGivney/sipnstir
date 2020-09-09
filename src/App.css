@@ -28,58 +28,63 @@ body {
 }
 .homeContentGrid {
   display: flex;
-  flex-flow: column nowrap;
-  /* grid-template-rows: 1fr auto;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  grid-template-areas: "about" 
-                       "twitter" ;
-  grid-gap: 1em; */
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 100%;
-  color: white;
-  min-height: 50em;
- 
+  width: 100%;  
 }
 
 .about {
   display: flex;
   flex-flow: column wrap;
-  background-color: black;
   padding: 1rem 1rem;
-  min-height: 20rem;
-  width: 100vw;
-  text-align: center
+  background-color: black;
+  color: white;
+  text-align: center;
+  justify-self: center;
+  min-height: 15rem;
+}
+.motto_first{
+  width: 50%;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+}
+.motto {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 1rem 1rem;
+  text-align: center;
+  justify-self: center;
+  min-height: 15rem;
 }
 .history {
-  display: flex;
-  flex-flow: row wrap;
-  background-color: black;
+  width: 100%;
   padding: 2rem 1rem;
-  min-height: 20rem;
-  width: 100vw;
-  text-align: justify
+  text-align: justify;
+  justify-self: center;
+  min-height: 15rem;
 }
 
-
 .meetMe {
-  background-color: black;
   padding: 2rem 1rem;
-  min-height: 20rem;
-  width: 100vw;
   text-align: justify;
-  color: white;
-  display: flex;
-  flex-flow: row wrap;
+  width: 100%;
+  justify-self: center;
+  min-height: 15rem;
 }
 .meetMeContent {
   display: flex;
   flex-flow: row nowrap;
-  padding: 2rem 1rem;
-  text-align: center
+  padding: 2rem 2rem;
+  text-align: center;
+  align-items: stretch;
 }
+
 .col-3 {
+  text-align: center;
   width: auto;
   padding: 1rem;
 }
