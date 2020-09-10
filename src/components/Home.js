@@ -21,10 +21,10 @@ const insideStyles = {
    flexDirection: 'column',
    justifyContent: 'center', 
  };
-const headShotStyles = {
-   width: '25vw',
-   height: '25vh',
- };
+// const headShotStyles = {
+//    width: '75vw',
+//    height: '55vh',
+//  };
 
    var tempDate = new Date();
    const days = [
@@ -88,19 +88,20 @@ const Home = () => (
       <div className="meetMe">
          <Header.Content as="h2" style={{padding: "1rem 2rem 0 2rem"}}>Meet Our Founder:</Header.Content>
          <div className="meetMeContent">
-           <Header.Content as="p" style={{padding: "1rem 1rem"}} className="shortBio">
-           Sean Palmer has worked in restaurants for most of his adult life. Starting in Maryland, busing tables to earn money in high school for snowboard trips, to Park City’s Farm Restaurant at Canyons Village to San Francisco’s famed fine dining restaurant, Spruce, and back again to Utah. The outdoor lifestyle brought him back to “the best snow on earth” and he can’t wait to share everything he has learned with you! 
-           </Header.Content>
-           
          <Image
             src= {HeadShot}
             alt= "Sean Palmer HeadShot"
-            style={headShotStyles}
+            size= "medium"
+            className="img_HShot"
           />
-         
-           <Header.Content as="p" style={{padding: "1rem 1rem"}} className="shortBio">
+          <div className="shortBio">
+           <Header.Content as="p" style={{padding: "1rem 1rem"}} >
+           Sean Palmer has worked in restaurants for most of his adult life. Starting in Maryland, busing tables to earn money in high school for snowboard trips, to Park City’s Farm Restaurant at Canyons Village to San Francisco’s famed fine dining restaurant, Spruce, and back again to Utah. The outdoor lifestyle brought him back to “the best snow on earth” and he can’t wait to share everything he has learned with you! 
+           </Header.Content>
+
+           <Header.Content as="p" style={{padding: "1rem 1rem"}} >
            As a certified Sommelier, with many years on the dining room and winery floor, Sean loves to pair guests with the perfect bottle of wine or lively libation. As the bar & wine manager at Handle restaurant, he was passionate about curating a wine and cocktail list that respected the classics while expanding flavor profiles for the patrons. Let him put a custom bar package together for your next event.           </Header.Content>
-         
+           </div>
         </div>
       </div>
 

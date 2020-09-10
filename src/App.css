@@ -77,12 +77,21 @@ body {
 }
 .meetMeContent {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   padding: 2rem 2rem;
   text-align: center;
-  align-items: stretch;
+  align-items: center;
+  justify-content: center;
+  width: auto;
 }
-
+.img_HShot {
+  text-align: center;
+  justify-self: center;
+}
+.shortBio {
+  text-align: center;
+  justify-self: center;
+}
 .col-3 {
   text-align: center;
   width: auto;
