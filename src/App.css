@@ -1,5 +1,6 @@
 body {
   background-color: #696969;
+  
 }
 
 .titleBox {
@@ -33,34 +34,35 @@ body {
   align-items: center;
   text-align: center;
   width: 100%;  
+  background-color: black;
 }
 
 .about {
   display: flex;
   flex-flow: column wrap;
   padding: 1rem 1rem;
-  background-color: black;
   color: white;
   text-align: center;
   justify-self: center;
-  min-height: 15rem;
+  min-height: 10rem;
 }
 .motto_first{
-  width: 50%;
+  width: 80%;
   text-align: center;
   justify-self: center;
   align-self: center;
 }
 .motto {
-  background-color: black;
   color: white;
-  width: 100%;
+  width: 80%;
   padding: 1rem 1rem;
   text-align: center;
   justify-self: center;
   min-height: 15rem;
 }
 .history {
+  background-color: #696969;
+  /* color: white; */
   width: 100%;
   padding: 2rem 1rem;
   text-align: justify;
@@ -72,17 +74,17 @@ body {
   padding: 2rem 1rem;
   text-align: justify;
   width: 100%;
+  color: white;
   justify-self: center;
   min-height: 15rem;
 }
 .meetMeContent {
   display: flex;
   flex-flow: row wrap;
-  padding: 2rem 2rem;
   text-align: center;
   align-items: center;
   justify-content: center;
-  width: auto;
+  width: 100%;
 }
 .img_HShot {
   text-align: center;
@@ -91,11 +93,13 @@ body {
 .shortBio {
   text-align: center;
   justify-self: center;
+  width: 80%
 }
 .col-3 {
   text-align: center;
   width: auto;
   padding: 1rem;
+  color: white;
 }
 
 /*Contact Page Style & Layout*/

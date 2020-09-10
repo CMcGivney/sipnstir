@@ -15,12 +15,12 @@ export default function SocialFollow() {
       >
          <Icon size="big" name="instagram" />
       </a>
-      <a
+      {/* <a
         href="https://www.facebook.com/sean.palmer.71"
         className="facebook social"
       >
         <Icon name="facebook" size="big" />
-      </a>
+      </a> */}
     </div>
   )
 }
