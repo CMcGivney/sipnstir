@@ -42,12 +42,12 @@ body {
   flex-flow: column wrap;
   padding: 1rem 1rem;
   color: white;
-  text-align: center;
+  text-align: justify;
   justify-self: center;
   min-height: 10rem;
 }
 .motto_first{
-  width: 80%;
+  width: 90%;
   text-align: center;
   justify-self: center;
   align-self: center;
@@ -79,21 +79,16 @@ body {
   min-height: 15rem;
 }
 .meetMeContent {
-  display: flex;
-  flex-flow: row wrap;
   text-align: center;
-  align-items: center;
-  justify-content: center;
   width: 100%;
 }
 .img_HShot {
-  text-align: center;
-  justify-self: center;
+  float: left;
+  padding: 1rem;
 }
 .shortBio {
-  text-align: center;
-  justify-self: center;
-  width: 80%
+  text-align:justify;
+
 }
 .col-3 {
   text-align: center;
