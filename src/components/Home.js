@@ -10,21 +10,16 @@ import {Helmet} from 'react-helmet'
 
 
 const insideStyles = {
-   padding: 20,
    position: "absolute",
    top: "55%",
    left: "50%",
    transform: "translate(-50%,-50%)",
    borderRadius: "15%",
-   height: '30rem',
    display: 'flex',
    flexDirection: 'column',
    justifyContent: 'center', 
+   padding: '0rem 1rem'
  };
-// const headShotStyles = {
-//    width: '75vw',
-//    height: '55vh',
-//  };
 
    var tempDate = new Date();
    const days = [
@@ -86,20 +81,20 @@ const Home = () => (
      </div>
 
       <div className="meetMe">
-         <Header.Content as="h2" style={{padding: "1rem 1rem"}}>Meet The Founder</Header.Content>
+         <Header.Content as="h2" style={{padding: "0rem 1rem"}}>Meet The Founder</Header.Content>
          <div className="meetMeContent">
          <Image
             src= {HeadShot}
             alt= "Sean Palmer HeadShot"
-            size= "medium"
+            size= "big"
             className="img_HShot"
           />
           <div className="shortBio">
-           <Header.Content as="p" style={{padding: "1rem 1rem"}} >
+           <Header.Content as="p" >
            Sean Palmer has worked in restaurants for most of his adult life. Starting in Maryland, busing tables to earn money in high school for snowboard trips, to Park City’s Farm Restaurant at Canyons Village to San Francisco’s famed fine dining restaurant and bar, <a href="http://www.spruceSF.com" alt="Spruce San Francisco Website">Spruce</a>. The outdoor lifestyle brought him back to “the best snow on earth” and he can’t wait to share everything he has learned with you! 
            </Header.Content>
 
-           <Header.Content as="p" style={{padding: "1rem 1rem"}} >
+           <Header.Content as="p" >
            As a certified Sommelier, with many years on the dining room and winery floor, Sean loves to pair guests with the perfect bottle of wine or lively libation. As the bar & wine manager at <a href="https://handleparkcity.com/">Handle</a> restaurant, he was passionate about curating a wine and cocktail list that respected the classics while expanding flavor profiles for the patrons. Let him put a custom bar package together for your next event.</Header.Content>
            </div>
         </div>

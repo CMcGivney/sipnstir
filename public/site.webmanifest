@@ -15,7 +15,7 @@
       ],
       "theme_color":"#ffffff",
       "background_color":"#ffffff",
-      "display":"standalone",
-      "start_url": "https://www.sipandstirpc.com"
+      "display":"standalone"
+      
     }
     

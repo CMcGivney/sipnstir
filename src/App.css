@@ -62,16 +62,15 @@ body {
 }
 .history {
   background-color: #696969;
-  /* color: white; */
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 0rem 1rem;
   text-align: justify;
   justify-self: center;
   min-height: 15rem;
 }
 
 .meetMe {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   text-align: justify;
   width: 100%;
   color: white;
@@ -85,10 +84,11 @@ body {
 .img_HShot {
   float: left;
   padding: 1rem;
+  border-radius: 55%;
 }
 .shortBio {
   text-align:justify;
-
+  padding: 1rem 1rem;
 }
 .col-3 {
   text-align: center;
