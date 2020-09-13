@@ -1,6 +1,6 @@
 import React from 'react'
 import { withRouter} from 'react-router-dom'
-import {Form,} from 'semantic-ui-react'
+import {Form, Header} from 'semantic-ui-react'
 import emailjs from 'emailjs-com'
 require('dotenv').config()
 
@@ -50,28 +50,28 @@ class ContactForm extends React.Component {
   handleChange = (e, { name, value }) => 
   this.setState({ [name]: value, });
 
-handleSubmit = (e) => {
-  e.preventDefault();
- const {name, email, phone, message, dates, numGuests, startTime, endTime, location, mobileBar, glassware, typeOfEvent} = this.state
+  handleSubmit = (e) => {
+   e.preventDefault();
+  const {name, email, phone, message, dates, numGuests, startTime, endTime, location, mobileBar, glassware, typeOfEvent} = this.state
 
- let templateParams = {
-  from_name: name,
-  from_email: email,
-  from_phone: phone,
-  to_name: 'Sean Palmer',
-  message_html: message,
-  request_dates: dates,
-  numOfGuests: numGuests,
-  startTime: startTime, 
-  endTime: endTime,
-  location: location,
-  mobileBar: mobileBar,
-  glassware: glassware,
-  typeOfEvent: typeOfEvent,
- }
+  let templateParams = {
+   from_name: name,
+   from_email: email,
+   from_phone: phone,
+   to_name: 'Sean Palmer',
+   message_html: message,
+   request_dates: dates,
+   numOfGuests: numGuests,
+   startTime: startTime, 
+   endTime: endTime,
+   location: location,
+   mobileBar: mobileBar,
+   glassware: glassware,
+   typeOfEvent: typeOfEvent,
+  }
 
- emailjs.send('sipnstir', "sipnstir", templateParams, "user_DPXyyf8OCsq80vNDZsRU8"
- ).then((response) => {
+ emailjs.send('sipnstir', "sipnstir", templateParams, "user_DPXyyf8OCsq80vNDZsRU8")
+  .then((response) => {
   if (response.status === 200) {
     this.resetForm()
   }
@@ -90,11 +90,13 @@ handleSubmit = (e) => {
 
   render() {
    return(
+     <>
+    <Header.Content className="headerCont" as="h1">Lets Connect, Request A Quote</Header.Content>
      <Form onSubmit={this.handleSubmit}>
       <Form.Group className="formComponents">
          <Form.Input
          autoFocus
-         placeholder= "Sean Palmer"
+         placeholder= "First Last"
          label="Full Name"
          name="name"
          onChange={this.handleChange}
@@ -120,6 +122,7 @@ handleSubmit = (e) => {
          required
          />
          </Form.Group>
+
          <Form.Group className="formComponents">
           <Form.Input
            name="dates"
@@ -129,17 +132,17 @@ handleSubmit = (e) => {
            onChange={this.handleChange}
            required
            >
-         </Form.Input>
-         <Form.Input
-          name="numGuests"
-          label="Number of Guests"
-          type="number"
-          min= "1"
-          placeholder= "1"
-          value={this.state.numGuests}
-          onChange={this.handleChange}
-          required
-          >
+          </Form.Input>
+          <Form.Input
+           name="numGuests"
+           label="Number of Guests"
+           type="number"
+           min= "1"
+           placeholder= "1"
+           value={this.state.numGuests}
+           onChange={this.handleChange}
+           required
+           >
          </Form.Input>
          <Form.Select
           label='Type of Event'
@@ -235,7 +238,7 @@ handleSubmit = (e) => {
        
        
       </Form>
-
+     </>
     )
     }
   }

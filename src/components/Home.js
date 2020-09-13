@@ -5,7 +5,7 @@ import Twitter from './Twitter.js'
 import Cocktail from '../images/cocktail.jpg'
 import { Parallax,} from 'react-parallax';
 import SipLogo from "../images/Sip&Stir_Black.png"
-import HeadShot from "../images/headShot.jpg"
+import Bio from './Bio.js'
 import {Helmet} from 'react-helmet'
 
 
@@ -74,33 +74,16 @@ const Home = () => (
          <Button>Request Quote</Button>
        </Link>
      </div>
-
      <div className='history'>
         <Header.Content as="h2" style={{padding: "1rem 1rem 0 1rem"}}>How it all started:</Header.Content>
-        <Header.Content as="p" style={{padding: "0 1rem"}}>Sip and Stir is the culmination of years of experience in the hospitality world, pulling from a plethora of local talent, ingredients, and fine spirits, we guarantee to surprise and delight your guests. Our founder, Sean Palmer, has worked in some of the Bay areas best wine and spirit programs while working alongside producers and purveyors to bring the best products to you. When returning to Park City in 2015 he was quickly hired to run the bar program at Handle restaurant. Bringing extensive knowledge of wine and cocktails to this program proved to be successful, with the growth of Handle’s bar crowd and return clientele, that showed up to enjoy the new cocktails and wine week after week. Before leaving for San Francisco to expand his expertise, Sean worked at The Farm at Canyons Village, where his love affair with wine blossomed. The Farm, at the time, had an extensive wine list and collection under the Talisker management, which won more than a few Wine Enthusiast awards. With this extensive background to pull from, it was time to take a leap and start a business that focused on the guest’s needs for in-home wine and cocktail services, Sip and Stir was born. </Header.Content>
+        <Header.Content as="p" style={{padding: "0 1rem"}}>
+         Sip and Stir is the culmination of years of experience in the hospitality world, pulling from a plethora of local talent, ingredients, and fine spirits, we guarantee to surprise and delight your guests. Our founder, Sean Palmer, has worked in some of Park City and San Francisco’s best wine and spirit programs while working alongside producers and purveyors to bring the best products to you. With this extensive background to pull from, it was time to take a leap and start a business that focused on the guest experience,  with in-home wine and cocktail service, Sip and Stir is born.
+         </Header.Content>
      </div>
 
-      <div className="meetMe">
-         <Header.Content as="h2" style={{padding: "0rem 1rem"}}>Meet The Founder</Header.Content>
-         <div className="meetMeContent">
-         <Image
-            src= {HeadShot}
-            alt= "Sean Palmer HeadShot"
-            size= "big"
-            className="img_HShot"
-          />
-          <div className="shortBio">
-           <Header.Content as="p" >
-           Sean Palmer has worked in restaurants for most of his adult life. Starting in Maryland, busing tables to earn money in high school for snowboard trips, to Park City’s Farm Restaurant at Canyons Village to San Francisco’s famed fine dining restaurant and bar, <a href="http://www.spruceSF.com" alt="Spruce San Francisco Website">Spruce</a>. The outdoor lifestyle brought him back to “the best snow on earth” and he can’t wait to share everything he has learned with you! 
-           </Header.Content>
-
-           <Header.Content as="p" >
-           As a certified Sommelier, with many years on the dining room and winery floor, Sean loves to pair guests with the perfect bottle of wine or lively libation. As the bar & wine manager at <a href="https://handleparkcity.com/">Handle</a> restaurant, he was passionate about curating a wine and cocktail list that respected the classics while expanding flavor profiles for the patrons. Let him put a custom bar package together for your next event.</Header.Content>
-           </div>
-        </div>
-      </div>
-
-      <div className='col-3'>
+      <Bio/>
+      
+     <div className='col-3'>
       <Header.Content as="h2">Want to see what we are up to?</Header.Content>
       <Twitter/>
      </div>

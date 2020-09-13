@@ -4,7 +4,7 @@ import { Icon } from 'semantic-ui-react'
 
 export default function SocialFollow() {
   return (
-    <div className="social-container">
+    <div>
      
       <a href="https://twitter.com/pc_sip" className="twitter social">
       <Icon size="big" name="twitter" />

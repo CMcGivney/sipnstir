@@ -45,6 +45,7 @@ body {
   text-align: justify;
   justify-self: center;
   min-height: 10rem;
+  max-width: 80vw;
 }
 .motto_first{
   width: 90%;
@@ -54,41 +55,54 @@ body {
 }
 .motto {
   color: white;
-  width: 80%;
   padding: 1rem 1rem;
   text-align: center;
   justify-self: center;
   min-height: 15rem;
+ 
 }
 .history {
-  background-color: #696969;
+  color:white;
   width: 100%;
-  padding: 0rem 1rem;
+  padding: 1rem 1rem;
   text-align: justify;
   justify-self: center;
   min-height: 15rem;
 }
 
-.meetMe {
-  padding: 1rem 1rem;
-  text-align: justify;
+.bioContent {
+  padding: 1rem;
+  margin: 1rem 1rem;
   width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column wrap;
   color: white;
-  justify-self: center;
-  min-height: 15rem;
 }
-.meetMeContent {
-  text-align: center;
-  width: 100%;
-}
+.projectCards {
+  display: flex;
+  align-items: center;
+ }
+ .cardHead {
+   justify-content: center;
+   padding: 1rem;
+ }
+ .cardMeta {
+   text-align: justify;
+   justify-content: center;
+   padding: 1rem;
+ }
+
 .img_HShot {
   float: left;
   padding: 1rem;
   border-radius: 55%;
+  
 }
 .shortBio {
   text-align:justify;
   padding: 1rem 1rem;
+  
 }
 .col-3 {
   text-align: center;
@@ -100,9 +114,9 @@ body {
 /*Contact Page Style & Layout*/
 .contact {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   padding: 1em;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
   min-height: 95vh;
@@ -110,34 +124,19 @@ body {
 }
 .formComponents {
   display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+
 }
 .radioBtn {
   display: flex;
-  text-align: center;
   justify-content: center;
-  align-items: center;
   padding: 1rem;
 }
 .headerCont {
  margin: 2rem;
 }
-.conHeader {
-  grid-area: header;
-  font-family: 'Roboto Slab', sans-serif;
-  text-align: center;
-}
-/* .emailBox {
-  grid-area: email;
-} */
 .socialFollows {
-  grid-area: social;
   padding: 1em ;
-}
-.contactImg {
-  grid-area: img;
 }
 /* styles for the social media icons */
 a.social {
@@ -203,7 +202,6 @@ a.social {
  }
  /*Email Style*/
 .emailBox {
-  grid-area: email;
   text-align: center;
   font-size: 1.2em;
   font-family: 'Roboto Slab', serif;
@@ -261,20 +259,7 @@ a.email:hover {
   padding: 1rem;
 }
 /*End Of FAQ Styles*/
-
-/*Event Page Style*/
-.cocktailContainer {
-  margin-top: 5rem;
-  height: 60rem;
-  width: 100%;
-  display: flex;
-  margin: 3rem 0 5rem 0;
-}
-.cocktailCard {
-  justify-content: center;
-}
 /*Footer style*/
-
 .footerFlex {
   justify-content: center;
   align-items: center;
