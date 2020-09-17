@@ -60,33 +60,33 @@ const Home = () => (
   
   <div className="homeContentGrid ">
 
-     <div className='about'>
+     <section className='about'>
       <Header.Content as="h3" className="motto_first">Welcome, Happy {dayName} Everyone!</Header.Content>
       <Header.Content as="p" className="motto_first">Here at Sip & Stir we are committed to creating an elevated beverage experience for your special event. Organizing an event presents many challenges, let us create a personalized beverage plan for you so you can enjoy the celebration with family, friends, and colleagues.</Header.Content>
       <Header.Content as="p" className="motto_first" style={{marginBottom:"1rem"}}>In addition to providing a mobile bar service for your event, we offer wine education, seasonal cocktail classes, and cellar management. Request a quote today!</Header.Content>
-      </div>
+      </section>
 
-      <div className="motto">
+      <section className="motto">
       <Header.Content as="h4" style={{margin: ".5rem"}} >"I can’t wait to share everything I’ve learned in my 15+ years in hospitality with you and your guests! "</Header.Content>
       <Header.Content as="h4" style={{margin: '0px '}}>~ Sean Palmer ~</Header.Content>
       <Header.Content as="p" style={{marginBottom: "2rem"}}>Chief Mixologist, Sommelier and Founder</Header.Content>
       <Link to="/contact">
          <Button>Request Quote</Button>
        </Link>
-     </div>
-     <div className='history'>
+     </section>
+     <section className='history'>
         <Header.Content as="h2" style={{padding: "1rem 1rem 0 1rem"}}>How it all started:</Header.Content>
         <Header.Content as="p" style={{padding: "0 1rem"}}>
          Sip and Stir is the culmination of years of experience in the hospitality world, pulling from a plethora of local talent, ingredients, and fine spirits, we guarantee to surprise and delight your guests. Our founder, Sean Palmer, has worked in some of Park City and San Francisco’s best wine and spirit programs while working alongside producers and purveyors to bring the best products to you. With this extensive background to pull from, it was time to take a leap and start a business that focused on the guest experience,  with in-home wine and cocktail service, Sip and Stir is born.
          </Header.Content>
-     </div>
-
+     </section>
+     <section className="bio">
       <Bio/>
-      
-     <div className='col-3'>
+     </section>
+     <section className='twitters'>
       <Header.Content as="h2">Want to see what we are up to?</Header.Content>
       <Twitter/>
-     </div>
+     </section>
 
    </div>
   
