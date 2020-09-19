@@ -43,13 +43,13 @@ const Home = () => (
 
    <Parallax
 
-      bgImage="https://res.cloudinary.com/cmmc/image/upload/f_auto,q_auto/v1600533723/sipnstir/cocktail_tz01ky.webp"
+      bgImage="https://res.cloudinary.com/cmmc/image/upload/c_scale,dpr_auto,f_auto,q_auto,w_4509/v1600533723/sipnstir/cocktail_tz01ky.jpg"
       bgImageAlt="A cocktail being poured over ice"
       strength={-300}
        >
       <div className="titleBox">
         <Image
-         src= "https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,q_auto/v1600533758/sipnstir/Sip_Stir_Black_qqkxj9.webp"
+         src= "https://res.cloudinary.com/cmmc/image/upload/c_scale,dpr_auto,f_auto,q_auto,w_996/v1600533758/sipnstir/Sip_Stir_Black_qqkxj9.png"
          alt= "Sip And Stir"
          size= "big"
          style={insideStyles}

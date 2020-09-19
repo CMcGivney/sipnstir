@@ -24,7 +24,7 @@ class DropDownMenu extends React.Component {
             >
             <Image 
               size='tiny' 
-              src="https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,q_auto/v1600533769/sipnstir/Sip_Stir_White_odhixa.webp" 
+              src="https://res.cloudinary.com/cmmc/image/upload/c_scale,dpr_auto,f_auto,w_240/v1600533769/sipnstir/Sip_Stir_White_odhixa.png" 
               style={{ padding: '0', margin: ".5em" }} 
               alt="Sip And Stir Logo"
               />

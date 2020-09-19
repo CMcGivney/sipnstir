@@ -47,7 +47,7 @@ class Navbar extends React.Component {
              >
               <Image
               size='tiny' 
-              src="https://res.cloudinary.com/cmmc/image/upload/q_auto,f_auto/v1600533769/sipnstir/Sip_Stir_White_odhixa.png" 
+              src="https://res.cloudinary.com/cmmc/image/upload/c_scale,dpr_auto,f_auto,q_auto,w_996/v1600533758/sipnstir/Sip_Stir_Black_qqkxj9.png" 
               alt="Sip & Stir Logo"
              />
             </Menu.Item>
