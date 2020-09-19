@@ -1,13 +1,13 @@
 import React from 'react';
 import {Image, Item,} from 'semantic-ui-react'
-import HeadShot from "../images/headShot.jpg"
+
 
 const Bio = () => (
 
  <Item.Group className="bioContent">
   <Item className="projectCards" >
    <Image
-     src={HeadShot}
+     src= "https://res.cloudinary.com/cmmc/image/upload/q_auto,f_auto/v1600536030/sipnstir/headShot_yoqfib.jpg"
      alt="Head shot of sean palmer the founder"
      className="img_HShot"
      size="medium"
