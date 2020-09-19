@@ -7,7 +7,7 @@ const Bio = () => (
  <Item.Group className="bioContent">
   <Item className="projectCards" >
    <Image
-     src= "https://res.cloudinary.com/cmmc/image/upload/q_auto,f_auto/v1600536030/sipnstir/headShot_yoqfib.jpg"
+     src= "https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,q_auto/v1600536030/sipnstir/headShot_yoqfib.jpg"
      alt="Head shot of sean palmer the founder"
      className="img_HShot"
      size="medium"

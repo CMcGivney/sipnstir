@@ -18,15 +18,6 @@ body {
   width: 100%;
 }
 
-
-.mainHeader {
-  font-family: 'Roboto Slab', serif;
-  font-size: 6rem;
-}
-
-.motto {
-  font-family: 'Roboto', serif;
-}
 .homeContentGrid {
   display: flex;
   flex-flow: column wrap;
@@ -208,8 +199,6 @@ a.social {
  /*Email Style*/
 .emailBox {
   text-align: center;
-  font-size: 1.2em;
-  font-family: 'Roboto Slab', serif;
   padding: .5em;
 
 }
@@ -297,16 +286,16 @@ a.email:hover {
 }
 
 .mainFooter {
-  font-family: 'Roboto Slab', serif;
+  
   margin: 1rem;
 
 }
 .phoneNum {
-  font-family: 'Roboto Slab', serif;
+  
   padding: .5em;
 }
 .poweredBy {
-  font-family: 'Roboto Slab', serif;
+  
   padding: .5em;
 }
 .bizAddress{

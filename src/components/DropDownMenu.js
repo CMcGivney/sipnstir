@@ -24,7 +24,7 @@ class DropDownMenu extends React.Component {
             >
             <Image 
               size='tiny' 
-              src="https://res.cloudinary.com/cmmc/image/upload/q_auto,f_auto/v1600533769/sipnstir/Sip_Stir_White_odhixa.png" 
+              src="https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,q_auto/v1600533769/sipnstir/Sip_Stir_White_odhixa.webp" 
               style={{ padding: '0', margin: ".5em" }} />
              </Menu.Item>
              </Link>

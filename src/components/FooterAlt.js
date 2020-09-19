@@ -12,7 +12,7 @@ class Footer extends React.Component {
         <div className="footerFlex">
           <div className='mainFooter'>
            <Image
-            src= "https://res.cloudinary.com/cmmc/image/upload/q_auto,f_auto/v1600533758/sipnstir/Sip_Stir_Black_qqkxj9.png"
+            src= "https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,q_auto/v1600533758/sipnstir/Sip_Stir_Black_qqkxj9.webp"
             alt= "Sip & Stir Logo"
             size= "small"
            />
