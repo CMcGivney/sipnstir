@@ -2,7 +2,7 @@ import React from 'react'
 import {Link, withRouter} from 'react-router-dom'
 import {Menu, Image} from 'semantic-ui-react'
 import DropDownMenu from './DropDownMenu.js'
-import Logo from '../images/Sip&Stir_White.png'
+
 
 const navStyles = {
   padding: '1rem',
@@ -47,7 +47,7 @@ class Navbar extends React.Component {
              >
               <Image
               size='tiny' 
-              src={Logo} 
+              src="https://res.cloudinary.com/cmmc/image/upload/q_auto,f_auto/v1600533769/sipnstir/Sip_Stir_White_odhixa.png" 
               alt="Sip & Stir Logo"
              />
             </Menu.Item>

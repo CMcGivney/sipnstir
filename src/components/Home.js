@@ -2,9 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import {Header, Image, Button,} from 'semantic-ui-react'
 import Twitter from './Twitter.js'
-import Cocktail from '../images/cocktail.jpg'
 import { Parallax,} from 'react-parallax';
-import SipLogo from "../images/Sip&Stir_Black.png"
 import Bio from './Bio.js'
 import {Helmet} from 'react-helmet'
 
@@ -44,13 +42,14 @@ const Home = () => (
       />
 
    <Parallax
-      bgImage={Cocktail}
+
+      bgImage="http://res.cloudinary.com/cmmc/image/upload/q_auto,f_auto/v1600533723/sipnstir/cocktail_tz01ky.jpg"
       bgImageAlt="A cocktail being poured over ice"
       strength={-300}
        >
       <div className="titleBox">
         <Image
-         src= {SipLogo}
+         src= "https://res.cloudinary.com/cmmc/image/upload/q_auto,f_auto/v1600533758/sipnstir/Sip_Stir_Black_qqkxj9.png"
          alt= "Sip And Stir"
          size= "big"
          style={insideStyles}

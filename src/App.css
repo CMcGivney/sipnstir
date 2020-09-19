@@ -69,7 +69,12 @@ body {
   justify-self: center;
   min-height: 15rem;
 }
-
+.bio {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+}
 .bioContent {
   padding: 1rem;
   margin: 1rem 1rem;
@@ -235,9 +240,9 @@ a.email:hover {
 }
 
 .faqContainer {
-  margin-top: 6rem;
+  margin: 6rem 1rem;
   display: flex;
-  width: 100%;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -249,6 +254,9 @@ a.email:hover {
 }
 .faqCard {
  display: flex;
+ justify-content: center;
+ align-items: center;
+  text-align: center;
 }
 .cardHead {
   justify-content: center;

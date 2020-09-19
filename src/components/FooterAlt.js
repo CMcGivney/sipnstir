@@ -1,7 +1,7 @@
 import React from 'react'
 import {Header, Icon, Image} from 'semantic-ui-react'
 import SocialFollow from './SocialFollows'
-import SipLogo from "../images/Sip&Stir_Black.png"
+
 
 class Footer extends React.Component {
 
@@ -12,7 +12,7 @@ class Footer extends React.Component {
         <div className="footerFlex">
           <div className='mainFooter'>
            <Image
-            src= {SipLogo}
+            src= "https://res.cloudinary.com/cmmc/image/upload/q_auto,f_auto/v1600533758/sipnstir/Sip_Stir_Black_qqkxj9.png"
             alt= "Sip & Stir Logo"
             size= "small"
            />
