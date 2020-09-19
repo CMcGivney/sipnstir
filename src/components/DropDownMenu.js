@@ -18,14 +18,16 @@ class DropDownMenu extends React.Component {
         fixed="top"
         style={{backgroundColor: "black", boxShadow: "0 2px 2px -2px rgba(0,0,0,.2)"}}>
         <Container className="dropDown" >
-           <Link to="/">
+           <Link to="/" alt="Link to Home Page">
            <Menu.Item 
             style={{padding: ".5rem" }} 
             >
             <Image 
               size='tiny' 
               src="https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,q_auto/v1600533769/sipnstir/Sip_Stir_White_odhixa.webp" 
-              style={{ padding: '0', margin: ".5em" }} />
+              style={{ padding: '0', margin: ".5em" }} 
+              alt="Sip And Stir Logo"
+              />
              </Menu.Item>
              </Link>
               <Dropdown 

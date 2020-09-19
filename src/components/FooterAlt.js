@@ -18,8 +18,8 @@ class Footer extends React.Component {
            />
           </div>
         <div className="footerData">
-           <div className='phoneNum'>
-            <Header.Content as="h4">
+           <div className='phoneNum' as='h5'>
+            <Header.Content >
               <Icon name="phone"/>
               <a className="email" href="tel:+1-301-992-7829">1-(301)-992-7829</a>
             </Header.Content>
@@ -37,7 +37,7 @@ class Footer extends React.Component {
             </Header.Content>
            </div>
           <div className='emailBox'>
-            <Header.Content as='h4'>
+            <Header.Content as='h5'>
               <Icon name="mail"/>
               <a className="email" href="mailto:sipandstirpc@gmail.com">SipAndStirPC@gmail.com</a>
               </Header.Content>
