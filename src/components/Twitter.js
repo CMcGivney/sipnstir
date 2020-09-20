@@ -10,7 +10,7 @@ const Twitter = () => (
      <TwitterTimelineEmbed
         sourceType="profile"
         screenName="pc_sip"
-        options={{height: "100vh", width: "100%"}}
+        options={{height: "100vh", width: "40rem"}}
         theme="dark"
      />
   </Container>

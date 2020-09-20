@@ -36,10 +36,11 @@ body {
   text-align: justify;
   justify-self: center;
   min-height: 10rem;
+  max-width:50rem;
 
 }
 .motto_first{
-  width: 90%;
+  max-width: 50rem;
   text-align: center;
   justify-self: center;
   align-self: center;
@@ -54,7 +55,7 @@ body {
 }
 .history {
   color:white;
-  width: 80%;
+  max-width: 50rem;
   padding: 1rem 1rem;
   text-align: justify;
   justify-self: center;
@@ -69,7 +70,7 @@ body {
 .bioContent {
   padding: 1rem;
   margin: 1rem 1rem;
-  width: 80%;
+  max-width: 60rem;
   height: auto;
   display: flex;
   flex-flow: column wrap;
