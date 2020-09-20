@@ -48,11 +48,11 @@ class Footer extends React.Component {
              <SocialFollow/>
             </Header.Content>
            </div>
-           <div className="footerBottom">
-             <Header.Content>
+          
+             <Header.Content className="footerBottom">
              © 2020 Sip & Stir Park City, Utah, all rights reserved.
              </Header.Content>
-           </div>
+
         </div>
         </>
     )

@@ -3,16 +3,15 @@ import { TwitterTimelineEmbed, TwitterFollowButton, } from 'react-twitter-embed'
 import {Container} from 'semantic-ui-react'
 
 const Twitter = () => (
-  <Container style={{margin: "0 1em 0 1em"}}>
+  <Container style={{margin: "0 1rem 0 1rem"}}>
      <TwitterFollowButton
        screenName={'pc_sip'}
-       sameSite="strict"
      />
      <TwitterTimelineEmbed
         sourceType="profile"
         screenName="pc_sip"
-        options={{height: "38em", width: "30em"}}
-        sameSite="strict"
+        options={{height: "100vh", width: "100%"}}
+        theme="dark"
      />
   </Container>
 )

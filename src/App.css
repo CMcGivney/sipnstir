@@ -102,6 +102,7 @@ body {
 }
 .twitters {
   text-align: center;
+  min-height: 40rem;
   width: auto;
   padding: 1rem;
   color: white;
@@ -204,7 +205,7 @@ a.social {
 }
 
 a.email {
-  color: darkblue;
+  color: white;
 }
 
 a.email:hover {
@@ -266,6 +267,7 @@ a.email:hover {
   width: 100%;
   flex-flow: column wrap;
   padding: 1em;
+  
 }
 
 .footerData {
@@ -282,7 +284,7 @@ a.email:hover {
 .footerBottom {
   display: flex;
   flex-flow: row wrap;
-  
+  color: white;
 }
 
 .mainFooter {
