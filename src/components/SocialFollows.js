@@ -6,12 +6,11 @@ export default function SocialFollow() {
   return (
     <div>
      
-      <a href="https://twitter.com/pc_sip" className="twitter social">
+      <a href="https://twitter.com/pc_sip" alt="twitter icon" className="twitter social">
       <Icon size="big" name="twitter" />
       </a>
       <a
-        href="https://www.instagram.com/sipandstirpc/"
-        className="instagram social"
+        href="https://www.instagram.com/sipandstirpc/" alt="instagram icon" className="instagram social"
       >
          <Icon size="big" name="instagram" />
       </a>

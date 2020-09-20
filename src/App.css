@@ -136,6 +136,12 @@ body {
   padding: 1em ;
 }
 /* styles for the social media icons */
+.twitter {
+  padding: .5rem;
+}
+.instagram {
+  padding: .5rem;
+}
 a.social {
   margin: 0 1rem;
   transition: transform 250ms;
@@ -210,13 +216,6 @@ a.email {
 
 a.email:hover {
   color: chartreuse;
-}
-/*Events Layout style*/
-.twitter {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: flex;
 }
 
 /*FAQ Page style*/
