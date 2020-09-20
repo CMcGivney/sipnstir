@@ -1,18 +1,18 @@
-import React, {Suspense, lazy} from 'react';
+import React from 'react';
 import {BrowserRouter as Router, Route, Switch, } from "react-router-dom";
 import './App.css'
 import Home from './components/Home'
-const Contact = lazy(() => import('./components/Contact'))
-const FAQ = lazy(() => import('./components/Faq'))
-const Navi = lazy(() => import('./components/NavBar'))
-const ScrollToTop = lazy(() => import('./components/scrollToTop'))
-const Footer = lazy(() => import('./components/FooterAlt'))
-const NoMatch = lazy(() => import('./components/NoMatch'))
+import FAQ from './components/Faq'
+import Contact from './components/Contact'
+import Navi from './components/NavBar'
+import Footer from './components/FooterAlt'
+import ScrollToTop from './components/scrollToTop'
+import NoMatch from './components/NoMatch'
+
 
 function App() {
   return (
   <Router>
-   <Suspense fallback={<div>Loading...</div>}>
     <Navi/>
     <ScrollToTop/>
      <Switch>
@@ -22,7 +22,6 @@ function App() {
       <Route component={NoMatch} />
      </Switch>
     <Footer/>
-   </Suspense>
  </Router>
   );
 }
