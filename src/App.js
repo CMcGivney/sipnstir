@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch, } from "react-router-dom";
+import {Route, Switch, } from "react-router-dom";
 import './App.css'
 import Home from './components/Home'
 import FAQ from './components/Faq'
@@ -12,7 +12,7 @@ import NoMatch from './components/NoMatch'
 
 function App() {
   return (
-  <Router>
+  <>
     <Navi/>
     <ScrollToTop/>
      <Switch>
@@ -22,7 +22,7 @@ function App() {
       <Route component={NoMatch} />
      </Switch>
     <Footer/>
- </Router>
+ </>
   );
 }
 
