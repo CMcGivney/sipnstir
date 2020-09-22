@@ -1,6 +1,7 @@
 {
   "name":"Sip And Stir",
-  "short_name":"S&S",
+  "short_name":"Sip&Stir",
+  "start_url":"https://sipandstirpc.com",
   "icons":[
     {
       "src":"/android-chrome-192x192.png",
@@ -14,7 +15,7 @@
       },
     {
       "src":"/apple-touch-icon.png",
-      "sizes":"",
+      "sizes":"180x180",
       "type":"image/png"
       },
     {
