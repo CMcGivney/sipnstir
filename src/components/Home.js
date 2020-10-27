@@ -46,14 +46,16 @@ const Home = () => (
          <Button>Request Quote</Button>
        </Link>
      </section>
+   
+     <section className="bio">
+      <Bio/>
+     </section>
+     
      <section className='history'>
         <Header.Content as="h2" style={{padding: "1rem 1rem 0 1rem"}}>How it all started:</Header.Content>
         <Header.Content as="p" style={{padding: "0 1rem"}}>
          Sip and Stir is the culmination of years of experience in the hospitality world, pulling from a plethora of local talent, ingredients, and fine spirits, we guarantee to surprise and delight your guests. Our founder, Sean Palmer, has worked in some of Park City and San Francisco’s best wine and spirit programs while working alongside producers and purveyors to bring the best products to you. With this extensive background to pull from, it was time to take a leap and start a business that focused on the guest experience,  with in-home wine and cocktail service, Sip and Stir is born.
          </Header.Content>
-     </section>
-     <section className="bio">
-      <Bio/>
      </section>
      <section className='twitters'>
       <Header.Content as="h2">Want to see what we are up to?</Header.Content>
