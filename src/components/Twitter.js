@@ -1,8 +1,10 @@
 import React from 'react'
 import { TwitterTimelineEmbed, TwitterFollowButton, } from 'react-twitter-embed';
-import {Container} from 'semantic-ui-react'
+import {Container, Header} from 'semantic-ui-react'
 
 const Twitter = () => (
+  <section className="twitters">
+  <Header.Content as="h2">Want to see what we are up to?</Header.Content>
   <Container style={{margin: "0 1rem 0 1rem"}}>
      <TwitterFollowButton
        screenName={'pc_sip'}
@@ -14,6 +16,7 @@ const Twitter = () => (
         theme="dark"
      />
   </Container>
+  </section>
 )
 
 export default Twitter
