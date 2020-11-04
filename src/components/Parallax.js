@@ -18,14 +18,8 @@ const insideStyles = {
  const ParaImage = () => {
   const size = UseWindowSize();
 
-  const mobileSize = () => {
-    if (size.height <= 414) {
-      return "medium"
-    }else {
-      return "big"
-    }
-    }
-   
+  const mobileSize = (size.height <= 414) ? "medium" : "big"
+  
   return (
    
    <Parallax
@@ -37,7 +31,7 @@ const insideStyles = {
       <Image
         src= "https://res.cloudinary.com/cmmc/image/upload/c_scale,dpr_auto,f_auto,q_auto,w_996/v1600533758/sipnstir/Sip_Stir_Black_qqkxj9.png"
         alt= "Sip And Stir"
-        size= {mobileSize()}
+        size= {mobileSize}
         style={insideStyles}
        />
      </div>

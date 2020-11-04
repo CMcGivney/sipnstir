@@ -2,15 +2,12 @@ import React from 'react'
 import {Link, withRouter, useLocation} from 'react-router-dom'
 import {Menu, Image} from 'semantic-ui-react'
 
-const navStyles = {
-  padding: '1rem',
-  color: 'white',
-}
-
-
 const NavBarContent = () => {
   const location = useLocation();
-  
+  const navStyles = {
+    padding: '1rem',
+    color: 'white',
+  }
 return (
 <>
   <Menu secondary compact inverted fixed='top'>
