@@ -43,6 +43,9 @@ body {
   max-width: 70vw;
   justify-self: center;
   align-self: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 .motto {
   color: white;
