@@ -2,6 +2,8 @@ import React from 'react'
 import { Parallax,} from 'react-parallax';
 import {Image,} from 'semantic-ui-react'
 import UseWindowSize from '../Hooks/useWindowSize.js'
+import Cocktail from "../Images/cocktail.JPG"
+import Logo from "../Images/Sip&Stir_noBackground.png"
 
 const insideStyles = {
   position: "absolute",
@@ -23,13 +25,13 @@ const insideStyles = {
   return (
    
    <Parallax
-     bgImage="https://res.cloudinary.com/cmmc/image/upload/c_scale,dpr_auto,f_auto,q_auto,w_4509/v1600533723/sipnstir/cocktail_tz01ky.webp"
-     bgImageAlt="A cocktail being poured over ice"
+     bgImage={Cocktail}
+     bgImageAlt="A cocktail and fruit with bar tools"
      strength={-100}
     >
      <div className="titleBox">
       <Image
-        src= "https://res.cloudinary.com/cmmc/image/upload/c_scale,dpr_auto,f_auto,q_auto,w_996/v1600533758/sipnstir/Sip_Stir_Black_qqkxj9.png"
+        src= {Logo}
         alt= "Sip And Stir"
         size= {mobileSize}
         style={insideStyles}
