@@ -8,9 +8,24 @@ import Navi from './components/NavBar'
 import Footer from './components/FooterAlt'
 import ScrollToTop from './components/scrollToTop'
 import NoMatch from './components/NoMatch'
+import TagManager from 'react-gtm-module'
+
+const tagManagerArgs = {
+  gtmId: 'GTM-MPJMMFW'
+}
+TagManager.initialize(tagManagerArgs)
 
 
 function App() {
+  window.dataLayer.push({
+    event: 'event',
+    eventProps: {
+      category: "pageview",
+      action: "getQuote",
+      label: "push",
+      value: null
+  }
+  });
   return (
   <>
     <Navi/>
