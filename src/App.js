@@ -22,6 +22,7 @@ const tagManagerArgs = {
 };
 
 TagManager.initialize(tagManagerArgs)
+
   window.dataLayer.push({
     event: 'event',
     eventProps: {
