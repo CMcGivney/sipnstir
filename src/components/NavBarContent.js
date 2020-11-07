@@ -11,7 +11,7 @@ const NavBarContent = () => {
   };
   return (
     <>
-      <Menu secondary inverted compact fixed="top" style={{backgroundColor: "#4d574b",}}>
+      <Menu secondary inverted style={{backgroundColor: "#4d574b", margin: "0 0 0 0"}}>
         <Link to="/">
           <Menu.Item name="Home" id="home">
             <Image

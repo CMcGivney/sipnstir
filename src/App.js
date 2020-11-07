@@ -9,7 +9,12 @@ import Footer from './components/FooterAlt'
 import ScrollToTop from './components/scrollToTop'
 import NoMatch from './components/NoMatch'
 import TagManager from 'react-gtm-module'
+import ReactGA from 'react-ga'
 
+function initializeReactGA() {
+  ReactGA.initialize('G-TTD6VHM4G0');
+  ReactGA.pageview('/homepage');
+}
 const tagManagerArgs = {
   gtmId: 'GTM-MPJMMFW'
 }
@@ -22,8 +27,8 @@ function App() {
     eventProps: {
       category: "pageview",
       action: "getQuote",
-      label: "push",
-      value: null
+      label: "button push",
+      value: 1
   }
   });
   return (

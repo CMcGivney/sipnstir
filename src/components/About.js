@@ -15,7 +15,7 @@ const dayName = days[tempDate.getDay()];
 
 const About = () => (
   <section className="about">
-  <div className="motto_first" style= {{textAlign: "center", margin: "1rem 0"}}>
+  <div className="motto_first" style= {{textAlign: "center", margin: "1rem 0", padding: '1rem 0 0 0'}}>
     <h3 style={{ margin: "0 .5rem 0 0 "}}>Welcome Everyone</h3>
     <h3 style={{ margin: "0 0 0 0 "}} >& Happy {dayName}!</h3>
     </div>

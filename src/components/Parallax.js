@@ -27,7 +27,7 @@ const insideStyles = {
    <Parallax
      bgImage={Cocktail}
      bgImageAlt="A cocktail and fruit with bar tools"
-     strength={-100}
+     strength={-200}
     >
      <div className="titleBox">
       <Image
