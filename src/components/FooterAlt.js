@@ -24,7 +24,7 @@ class Footer extends React.Component {
               <a className="email" href="tel:+1-301-992-7829">1-(301)-992-7829</a>
             </Header.Content>
            </div>
-          <div className='bizAddress'>
+          {/* <div className='bizAddress'>
           <Header.Content>
              <Icon name="map pin"/>
              <a 
@@ -35,7 +35,7 @@ class Footer extends React.Component {
                >347 Keetly Station Circle Heber City, UT 84032
              </a>
             </Header.Content>
-           </div>
+           </div> */}
           <div className='emailBox'>
             <Header.Content as='h5'>
               <Icon name="mail"/>
