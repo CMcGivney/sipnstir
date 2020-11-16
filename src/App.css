@@ -1,6 +1,5 @@
 body {
-  background-color: #696969;
-  
+  background-color: #696969; 
 }
 
 .titleBox {
@@ -53,13 +52,18 @@ body {
   justify-content: center;
 }
 .motto {
+  display: flex;
+  flex-flow: column nowrap;
   color: white;
   padding: 1rem 1rem;
   text-align: center;
   justify-self: center;
+  align-self: center;
+  justify-content: center;
   min-height: 15rem;
- 
+  width: 100%;
 }
+
 .history {
   color:white;
   max-width: 50rem;
