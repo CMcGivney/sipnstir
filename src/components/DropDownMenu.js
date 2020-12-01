@@ -10,12 +10,11 @@ const DropDownMenu = () => {
       <Menu
         compact
         size="large"
-        pointing
         fluid
         fixed="top"
         style={{
-          backgroundColor: "black",
-          boxShadow: "0 2px 2px -2px rgba(0,0,0,.2)",
+          backgroundColor: "#4d574b",
+          
         }}
       >
         <Container className="dropDown">
@@ -49,14 +48,14 @@ const DropDownMenu = () => {
                   Home
                 </Dropdown.Item>
               </Link>
-              {/* <Link to='/Services'>
+              <Link to='/Services'>
                 <Dropdown.Item 
                 name='Services'
                 id='Services'
                 as='h4'
                 active={location.pathname === '/Services'}>Services
               </Dropdown.Item>
-              </Link> */}
+              </Link>
               <Link to="/Contact">
                 <Dropdown.Item
                   name="Quote"
@@ -66,13 +65,13 @@ const DropDownMenu = () => {
                   Quote
                 </Dropdown.Item>
               </Link>
-              {/* <Link to='/Events'>
+              <Link to='/Partners'>
               <Dropdown.Item 
-                 name='Events'
-                id='Events'
-                active={location.pathname === '/Events'}>Events
+                 name='Partners'
+                id='Partners'
+                active={location.pathname === '/Partners'}>Events
               </Dropdown.Item>
-              </Link> */}
+              </Link>
               <Link to="/FAQ">
                 <Dropdown.Item
                   name="FAQ"

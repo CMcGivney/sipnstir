@@ -21,6 +21,7 @@ export const useScrollHandler = () => {
       document.removeEventListener("scroll", onScroll);
     };
   }, [scroll, setScroll]);
-
+   
   return scroll;
 };
+

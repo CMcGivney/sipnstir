@@ -1,16 +1,12 @@
 import React from "react";
 import ContactForm from "../components/ContactForm";
 import Nav from "../components/NavBar.js";
-import { useScrollHandler } from "../Hooks/useScrollHandler.js";
 
-const Contact = () => {
-  const scroll = useScrollHandler();
-  const bar = scroll !== false ? <Nav /> : null;
-  return (
+const Contact = () => (
     <div className="contact">
-      {bar}
+      <Nav/>
+      <h1 className="pageHeader" >Lets Connect, Request A Quote</h1>
       <ContactForm />
     </div>
   );
-};
 export default Contact;

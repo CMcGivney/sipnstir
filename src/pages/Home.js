@@ -6,13 +6,8 @@ import Nav from "../components/NavBar.js";
 // import Twitter from "./Twitter.js";
 import ParaImage from "../components/Parallax.js";
 import { Helmet } from "react-helmet";
-import {useScrollHandler} from "../Hooks/useScrollHandler.js"
-
 
 const Home = () => {
-const scroll = useScrollHandler()
-const bar = scroll !== false ? <Nav/> : null;
-  
   return (
     <>
       <Helmet
@@ -26,7 +21,7 @@ const bar = scroll !== false ? <Nav/> : null;
           { property: "og:url", content: "https://sipandstirpc.com/" },
         ]}
       />
-     {bar}
+      <Nav />
       <ParaImage />
 
       <div className="homeContentGrid ">
@@ -35,9 +30,8 @@ const bar = scroll !== false ? <Nav/> : null;
         <Bio />
         {/* <Twitter /> */}
       </div>
-    
     </>
-    )
-}
+  );
+};
 
 export default Home;

@@ -15,6 +15,7 @@ class Footer extends React.Component {
             src= "https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,q_auto/v1600533758/sipnstir/Sip_Stir_Black_qqkxj9.webp"
             alt= "Sip & Stir Logo"
             size= "small"
+            href="/"
            />
           </div>
         <div className="footerData">
@@ -24,18 +25,18 @@ class Footer extends React.Component {
               <a className="email" href="tel:+1-301-992-7829">1-(301)-992-7829</a>
             </Header.Content>
            </div>
-          {/* <div className='bizAddress'>
+          <div className='bizAddress'>
           <Header.Content>
              <Icon name="map pin"/>
              <a 
                className="email"  
                target="_blank" 
                rel="noopener noreferrer" 
-               href="https://www.google.com/maps/place/347+Keetly+Station+Cir,+Heber+City,+UT+84032/@40.6555831,-111.4101602,18z/data=!3m1!4b1!4m5!3m4!1s0x87520d95d8f3e183:0xcb108bcc4af3288d!8m2!3d40.655582!4d-111.409587"
-               >347 Keetly Station Circle Heber City, UT 84032
+               href="https://www.google.com/maps/place/Park+City,+UT+84060/@40.6169073,-111.5450997,17z/data=!3m1!4b1!4m13!1m7!3m6!1s0x87520f632c6303fd:0xd871c4df25375794!2sPark+City,+UT!3b1!8m2!3d40.6460622!4d-111.4979729!3m4!1s0x87527248a9a2324b:0x2621deb9ea016f8b!8m2!3d40.6184914!4d-111.5413444"
+               >Park City, Utah
              </a>
             </Header.Content>
-           </div> */}
+           </div>
           <div className='emailBox'>
             <Header.Content as='h5'>
               <Icon name="mail"/>

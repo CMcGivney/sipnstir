@@ -1,6 +1,6 @@
 import React from 'react'
 import { withRouter} from 'react-router-dom'
-import {Form, Header} from 'semantic-ui-react'
+import {Form} from 'semantic-ui-react'
 import emailjs from 'emailjs-com'
 require('dotenv').config()
 
@@ -90,8 +90,7 @@ class ContactForm extends React.Component {
 
   render() {
    return(
-     <>
-    <Header.Content className="headerCont" as="h1">Lets Connect, Request A Quote</Header.Content>
+     
      <Form onSubmit={this.handleSubmit}>
       <Form.Group className="formComponents">
          <Form.Input
@@ -238,7 +237,7 @@ class ContactForm extends React.Component {
        
        
       </Form>
-     </>
+     
     )
     }
   }
