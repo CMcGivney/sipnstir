@@ -19,9 +19,9 @@ const FaqComponent = () => {
 
       <h2 className="pageHeader">Frequently Ask Questions</h2>
 
-      <div className="faqContainer">
+      <div className="faqContainer" >
         {faqsArray.map((qa, index) => (
-          <div className="faqCard" key={index}>
+          <div className="faqCard" key={index} >
             <h3 className="cardHead">{qa.question}</h3>
             <p className="cardMeta">{qa.answer}</p>
           </div>

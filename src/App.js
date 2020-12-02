@@ -4,7 +4,7 @@ import './App.css'
 import Home from './pages/Home'
 import FAQ from './pages/Faq'
 import Services from './pages/Services.js'
-import Partners from './pages/Partners.js'
+// import Partners from './pages/Partners.js'
 import Contact from './pages/Contact'
 import Footer from './components/FooterAlt'
 import ScrollToTop from './components/scrollToTop'
@@ -47,7 +47,7 @@ TagManager.initialize(tagManagerArgs)
       <Route exact path='/Contact' component={Contact} />
       <Route exact path='/FAQ' component={FAQ} />
       <Route exact path='/Services' component={Services} />
-      <Route exact path='/Partners' component={Partners} />
+      {/* <Route exact path='/Partners' component={Partners} /> */}
       <Route component={NoMatch} />
      </Switch>
     <Footer/>

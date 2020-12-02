@@ -15,7 +15,7 @@ const FaqProvider = ({ children }) => {
 
   alcohol = new FAQS(
     "Q: Can I buy alcohol through you?",
-    "A: Well, that's a tricky one. I can help you in choosing the right spirits and wine for your event. Contact me for details"
+    "A: Well, that's a tricky one. We can help you in choosing the right spirits and wine for your event. Contact us for details"
   );
   faqsArray.push(alcohol);
 
@@ -33,13 +33,13 @@ const FaqProvider = ({ children }) => {
 
   diningOptions = new FAQS(
     "Q: Do you offer dining options?",
-    "A: Sip and Sir focus exclusively on beverage services but I work with many in-home chefs who specialize in many different cuisines. Let me know what you're interested in and we can find a chef and a wine experience that’s perfect for you."
+    "A: Sip and Sir focus exclusively on beverage services but we work with many in-home chefs who specialize in many different cuisines. Let us know what you're interested in and we can find a chef and a wine experience that’s perfect for you."
   );
   faqsArray.push(diningOptions);
 
   serviceProvided = new FAQS(
     "Q: What do Sip and Stir provide?",
-    "A: Sip and Stir provide everything you need for a seamless beverage experience. Please contact me for details as we cater to your specific needs. We offer various handcrafted syrups and mixers as well as the basics (soda water, tonic, fruit, etc) Glassware (up to 25 people) and a mobile bar can also be arranged."
+    "A: Sip and Stir provide everything you need for a seamless beverage experience. Please contact us for details as we cater to your specific needs. We offer various handcrafted syrups and mixers as well as the basics (soda water, tonic, fruit, etc) Glassware (up to 25 people) and a mobile bar can also be arranged."
   );
   faqsArray.push(serviceProvided);
 

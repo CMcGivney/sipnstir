@@ -1,8 +1,7 @@
 import React from "react";
-import { NavLink, withRouter, useLocation } from "react-router-dom";
+import { NavLink, withRouter} from "react-router-dom";
 
 const NavBarContent = () => {
-  const location = useLocation();
   const navStyles = {
     backgroundColor: "#4d574b",
     margin: "0 0 0 0",
@@ -43,9 +42,9 @@ const NavBarContent = () => {
           <NavLink style={navItems} exact to="/Services" name="Services" id="Services">
             Services
           </NavLink>
-          <NavLink style={navItems} exact to="/Partners" name="Partners" id="Partners">
+          {/* <NavLink style={navItems} exact to="/Partners" name="Partners" id="Partners">
             Partners
-          </NavLink>
+          </NavLink> */}
           <NavLink style={navItems} exact to="/FAQ" name="FAQ" id="FAQ">
             FAQs
           </NavLink>
