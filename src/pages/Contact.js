@@ -6,9 +6,11 @@ const Contact = () => (
   <>
     <Nav />
     <div className="contact">
-      <h1 className="pageHeader">Lets Connect, Request A Quote</h1>
-      <ContactForm />
+      <h1 className="pageHeader">Lets Connect</h1>
+      <p>*Request A Quote*</p>
     </div>
+      <br />
+      <ContactForm />
   </>
 );
 export default Contact;

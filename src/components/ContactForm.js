@@ -91,7 +91,7 @@ class ContactForm extends React.Component {
   render() {
    return(
      
-     <Form onSubmit={this.handleSubmit}>
+     <Form onSubmit={this.handleSubmit} className="contact">
       <Form.Group className="formComponents">
          <Form.Input
          autoFocus
@@ -143,7 +143,7 @@ class ContactForm extends React.Component {
            required
            >
          </Form.Input>
-         <Form.Select
+         {/* <Form.Select
           label='Type of Event'
           name="typeOfEvent"
           options={typeOfEventOptions}
@@ -151,7 +151,7 @@ class ContactForm extends React.Component {
           onChange={this.handleChange}
           required
           >
-         </Form.Select>
+         </Form.Select> */}
          </Form.Group>
          <Form.Group className="formComponents">
           <Form.Input
@@ -228,7 +228,8 @@ class ContactForm extends React.Component {
          placeholder= "Message"
          label="Message"
          name="message"
-         size="medium"
+         rows="10"
+         cols="50"
          onChange={this.handleChange}
          value={this.state.message}
          required
