@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Card } from "semantic-ui-react";
 import { Helmet } from "react-helmet";
 import Nav from "../components/NavBar.js";
 import { FaqContext, FaqProvider } from "../Context/FaqContext";
@@ -17,19 +16,17 @@ const FaqComponent = () => {
         />
       </Helmet>
       <Nav />
-      
-        <h2 className="pageHeader">Frequently Ask Questions</h2>
-        <div className="faqContainer">
-          <Card.Group className="cardContainer" stackable>
-            {faqsArray.map((qa, index) => (
-              <Card raised className="faqCard" key={index}>
-                <Card.Header className="cardHead">{qa.question}</Card.Header>
-                <Card.Meta className="cardMeta">{qa.answer}</Card.Meta>
-              </Card>
-            ))}
-          </Card.Group>
-        </div>
-     
+
+      <h2 className="pageHeader">Frequently Ask Questions</h2>
+
+      <div className="faqContainer">
+        {faqsArray.map((qa, index) => (
+          <div className="faqCard" key={index}>
+            <h3 className="cardHead">{qa.question}</h3>
+            <p className="cardMeta">{qa.answer}</p>
+          </div>
+        ))}
+      </div>
     </>
   );
 };

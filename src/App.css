@@ -246,9 +246,8 @@ a.email:hover {
 /*FAQ Page style*/
 
 .faqContainer {
-  margin: 6rem 1rem;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -260,9 +259,17 @@ a.email:hover {
 }
 .faqCard {
  display: flex;
+ flex-flow: column nowrap;
  justify-content: center;
  align-items: center;
-  text-align: center;
+ text-align: center;
+ border: solid black 3px;
+ border-radius: 55px;
+ box-shadow: 5px 5px 5px black;
+ background-color: rgb(224, 223, 223);
+ min-height: 20rem;
+ width: 25rem;
+ margin: 1rem;
 }
 .cardHead {
   justify-content: center;
@@ -325,6 +332,7 @@ a.email:hover {
   width: 100%;
   color: white;
   font-family: Georgia, serif;
+  padding: 0 1rem;
 }
 .partnerContainer {
   display: flex;
