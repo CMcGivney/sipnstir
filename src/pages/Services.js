@@ -1,18 +1,19 @@
 import React from "react";
-import { Header } from "semantic-ui-react";
+import { h3 } from "semantic-ui-react";
 import NavBar from "../components/NavBar.js";
 
 const Services = () => (
   <>
     <NavBar />
-    <div className="services">
-      <div className="SrvHeader">
-        <h1>Services We Provide</h1>
-      </div>
+
+    <div className="SrvHeader">
+      <h1>Services We Provide</h1>
     </div>
+
     <div className="srvContent">
       <div className="srvColumn">
-        <Header as="h3">Event Bartending</Header>
+        <h3>Event Bartending</h3>
+        <hr />
         <p>
           Not getting the reservation time you want? Don’t want to pay for
           parking? Do the Utah DUI laws have you worried about drinking at
@@ -22,7 +23,8 @@ const Services = () => (
         </p>
       </div>
       <div className="srvColumn">
-        <Header as="h3">Wine Cellar Management</Header>
+        <h3>Wine Cellar Management</h3>
+        <hr />
         <p>
           Are you new to Utah and having a hard time finding the wines you like
           or having a hard time navigating the DABC system in general? Sip and
@@ -30,7 +32,8 @@ const Services = () => (
         </p>
       </div>
       <div className="srvColumn">
-        <Header as="h3">Wine Education</Header>
+        <h3>Wine Education</h3>
+        <hr />
         <p>
           Have you ever wondered why your wine smells like raspberries? Sip and
           Stir offer Wine Education classes as well as in-home tastings to hone
@@ -39,7 +42,8 @@ const Services = () => (
         </p>
       </div>
       <div className="srvColumn">
-        <Header as="h3">Cocktail Education</Header>
+        <h3>Cocktail Education</h3>
+        <hr />
         <p>
           Are you a restaurant/bar owner who’s looking to seasonally change or
           overhaul your wine and cocktail menu? Sip and Stir can offer you

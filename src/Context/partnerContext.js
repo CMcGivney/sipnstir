@@ -52,7 +52,7 @@ const BusinessProvider = ({ children }) => {
   partnerArray.push(fourPartner);
 
   fivePartner = new Partner(
-    "Partner Four",
+    "Partner Five",
     "Brief description of business and cuisine or something, yada yada yada...",
     "https://www.hiddenpeakdining.com/about",
     Logo,
@@ -61,7 +61,7 @@ const BusinessProvider = ({ children }) => {
   partnerArray.push(fivePartner);
 
   sixPartner = new Partner(
-    "Partner Four",
+    "Partner Six",
     "Brief description of business and cuisine or something, yada yada yada...",
     "https://www.hiddenpeakdining.com/about",
     Logo,

@@ -1,12 +1,16 @@
-import React, { useState } from "react";
-import NavBarContent from "./NavBarContent.js";
-import DropDownMenu from "./DropDownMenu.js";
+import React, {useState} from "react";
+import NavBarContent from "./NavbarComponent.js";
+import DropDownMenu from "./DropdownNavbar.js";
 import UseWindowSize from "../Hooks/useWindowSize.js";
-import { useScrollHandler } from "../Hooks/useScrollHandler.js";
 import { useScrollPosition } from "../Hooks/useScrollPosition.js";
 
 const Navbar = () => {
+  const [hideOnScroll, setHideOnScroll] = useState(true)
 
+  useScrollPosition(({ prevPos, currPos }) => {
+    const isShow = currPos.y > prevPos.y
+    if (isShow !== hideOnScroll) setHideOnScroll(isShow)
+  }, [hideOnScroll])
 
   const size = UseWindowSize();
   const NavbarComponent =
