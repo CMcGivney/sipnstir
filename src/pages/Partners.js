@@ -19,11 +19,11 @@ const PartnersComponent = () => {
                 width="50rem"
                 height="50rem"
               />
-              <h2>
-                <a className="businessTitle" href={p.businessUrl}>
+              <h3>
+                <a className="businessTitle" href={p.businessUrl} alt={p.bizTitle}>
                   {p.bizTitle}
                 </a>
-              </h2>
+              </h3>
             </div>
             <br />
             <p className="description"> {p.description}</p>

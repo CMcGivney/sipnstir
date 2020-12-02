@@ -7,7 +7,7 @@ const Services = () => (
     <NavBar />
 
     <div className="SrvHeader">
-      <h1>Services We Provide</h1>
+      <h1 className="headerDiv">Services We Provide</h1>
     </div>
 
     <div className="srvContent">
