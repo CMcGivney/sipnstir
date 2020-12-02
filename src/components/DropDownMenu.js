@@ -11,13 +11,12 @@ const DropDownMenu = () => {
         compact
         size="large"
         fluid
-        fixed="top"
         style={{
           backgroundColor: "#4d574b",
           
         }}
       >
-        <Container className="dropDown">
+        <Container>
           <Link to="/" alt="Link to Home Page">
             <Menu.Item style={{ padding: ".5rem" }}>
               <Image

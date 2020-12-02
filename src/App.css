@@ -1,6 +1,6 @@
-body {
+body, html, #root {
   background-color: #696969; 
-
+  width: 100%;
 }
 
 .titleBox {
@@ -12,7 +12,6 @@ body {
   min-height: 100vh;
   
 }
-
 
 .noMatchTitle {
   background-color: rgba(173, 166, 166, 0.836);
@@ -179,7 +178,10 @@ a.social {
  .services{
   display: flex;
   flex-flow: column wrap;
-  min-height: 50vh
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
  }
  .SrvHeader{
    display: flex;
@@ -190,26 +192,30 @@ a.social {
    background-size: cover;
    background-repeat: no-repeat;
    width: 100%;
-   min-height: 55vh;
+   min-height: 40vh;
    color: white;
  }
 
  .srvContent {
    display: flex;
    flex-flow: row wrap;
-   min-height: 20rem;
+   /* min-height: 25rem; */
    width: 100%;
    margin-top: 1.5rem;
    justify-items: center;
+   justify-content: center;
    align-items: center;
  }
+
  .srvColumn {
    min-height: 15rem;
-   width: 50%;
-   text-align: center;
+   width: 35rem;
+   text-align: justify;
    justify-self: center;
    align-self: center;
+   margin: 1rem 1rem;
    padding: 1rem;
+   /* border: black solid 2px; */
  }
  /*Email Style*/
 .emailBox {
@@ -304,10 +310,7 @@ a.email:hover {
 }
 /* Partners */
 .pageHeader {
-  padding: 8rem 1rem 0 1rem;
   text-align: center;
-  
-  min-height: 15rem;
   width: 100%;
   color: white;
   font-family: Georgia, serif;
@@ -322,29 +325,105 @@ a.email:hover {
 .partnerCard {
   display: flex; 
   flex-flow: column nowrap;
+  align-items: center;
   padding: 1rem;
   margin: 1rem;
   width: 35rem;
   min-height: 35rem;
   text-align: justify;
   border: black solid .25rem;
+  border-radius: 15px;
   box-shadow: 5px 5px 5px black;
+  background-color: rgb(138, 138, 135);
   
 }
 .cardHeader {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
   text-decoration: underline;
-  
+  width: 100%;
+  padding: 0 1rem;
+}
+.description {
+  width: 90%;
+
 }
 a.businessTitle {
   color: black;
 }
 a.businessTitle:hover {
  color: rgb(50, 50, 151);
+}
+/*DropDown Menu Styles*/
+.menu-container {
+  position: relative;
+}
+.menu {
+  background: #ffffff;
+  border-radius: 8px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 300px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
 
+.menu.active {
+  opacity: 1;
+  position: absolute;
+  visibility: visible;
+  transform: translateY(0);
+  z-index: 1000;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #dddddd;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333333;
+  padding: 15px 20px;
+  display: block;
+}
+.menu-trigger {
+  background: #ffffff;
+  border-radius: 90px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  border: none;
+  vertical-align: middle;
+  transition: box-shadow 0.4s ease;
+}
+
+.menu-trigger:hover {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu-trigger span {
+  font-weight: 700;
+  vertical-align: middle;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.menu-trigger img {
+  border-radius: 90px;
 }
 @media screen and (max-width: 480px) {
   .srvContent {
@@ -359,9 +438,11 @@ a.businessTitle:hover {
   .srvColumn {
     min-height: 15rem;
     width: 100%;
-    text-align: center;
+    text-align: justify;
     justify-self: center;
     align-self: center;
     padding: 1rem;
+    margin: 0;
   }
+ 
 }

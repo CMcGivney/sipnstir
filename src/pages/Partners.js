@@ -25,8 +25,8 @@ const PartnersComponent = () => {
                 </a>
               </h2>
             </div>
-            <br/>
-            <p>{p.description}</p>
+            <br />
+            <p className="description"> {p.description}</p>
           </div>
         ))}
       </div>
