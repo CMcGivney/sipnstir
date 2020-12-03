@@ -128,12 +128,14 @@ body {
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  width: 100%;
+  min-height: 95vh;
 }
 .formComponents {
   display: flex;
   justify-content: space-around;
+
 }
+
 .radioBtn {
   display: flex;
   justify-content: center;
@@ -378,7 +380,7 @@ a.businessTitle:hover {
 .menu-container {
   position: relative;
 }
-.menu {
+.dropdown_menu {
   background: #ffffff;
   border-radius: 8px;
   position: absolute;
@@ -392,7 +394,7 @@ a.businessTitle:hover {
   transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
 }
 
-.menu.active {
+.dropdown_menu.active {
   opacity: 1;
   position: absolute;
   visibility: visible;
@@ -400,23 +402,23 @@ a.businessTitle:hover {
   z-index: 1000;
 }
 
-.menu ul {
+.dropdown_menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.menu li {
+.dropdown_menu li {
   border-bottom: 1px solid #dddddd;
 }
 
-.menu li a {
+.dropdown_menu li a {
   text-decoration: none;
   color: #333333;
   padding: 15px 20px;
   display: block;
 }
-.menu-trigger {
+.dropdown_menu-trigger {
   background: #ffffff;
   border-radius: 90px;
   cursor: pointer;
@@ -430,18 +432,18 @@ a.businessTitle:hover {
   transition: box-shadow 0.4s ease;
 }
 
-.menu-trigger:hover {
+.dropdown_menu-trigger:hover {
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
 
-.menu-trigger span {
+.dropdown_menu-trigger span {
   font-weight: 700;
   vertical-align: middle;
   font-size: 14px;
   margin: 0 10px;
 }
 
-.menu-trigger img {
+.dropdown_menu-trigger img {
   border-radius: 90px;
 }
 @media screen and (max-width: 480px) {

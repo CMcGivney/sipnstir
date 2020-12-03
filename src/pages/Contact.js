@@ -8,9 +8,9 @@ const Contact = () => (
     <div className="contact">
       <h1 className="pageHeader">Lets Connect</h1>
       <p>*Request A Quote*</p>
-    </div>
-      <br />
+  
       <ContactForm />
+    </div>
   </>
 );
 export default Contact;
