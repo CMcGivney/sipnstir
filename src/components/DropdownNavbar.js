@@ -11,8 +11,8 @@ const DropDownMenu = () => {
     <header style={navStyles}>
       <NavLink to="/" alt="Link to Home Page">
         <img
-          height="40em"
-          width="40em"
+          height="60rem"
+          width="60rem"
           src="https://res.cloudinary.com/cmmc/image/upload/c_scale,dpr_auto,f_auto,w_240/v1600533769/sipnstir/Sip_Stir_White_odhixa.png"
           style={{ padding: "0", margin: ".5em" }}
           alt="Sip And Stir Logo"

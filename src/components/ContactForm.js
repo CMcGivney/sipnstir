@@ -193,8 +193,9 @@ class ContactForm extends React.Component {
             required
           ></Form.Input>
         </Form.Group>
-        <Form.Group widths="equal" className="radioBtn">
-          <label>Mobile Bar Rental?</label>
+        <Form.Group className="radioStyle">
+        <div className="radioBtn">
+          <label style={{textDecoration: 'underline', margin: ".5rem"}}>Mobile Bar Rental?</label>
           <Form.Radio
             label="Yes"
             type="radio"
@@ -213,9 +214,11 @@ class ContactForm extends React.Component {
             checked={this.state.mobileBar === "no"}
             onChange={this.handleChange}
           />
-        </Form.Group>
-        <Form.Group className="radioBtn">
-          <label>Glassware?</label>
+          </div>
+        {/* </Form.Group>
+        <Form.Group className="radioBtn"> */}
+        <div className="radioBtn">
+          <label style={{textDecoration: 'underline', margin: ".5rem"}}>Glassware Choice</label>
           <Form.Radio
             label="Disposable"
             type="radio"
@@ -234,6 +237,7 @@ class ContactForm extends React.Component {
             checked={this.state.glassware === "Glass"}
             onChange={this.handleChange}
           />
+          </div>
         </Form.Group>
         <Form.TextArea
           placeholder="Message"

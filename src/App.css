@@ -1,6 +1,6 @@
-body {
+body, html {
   background-color: #696969; 
-  
+  width: 100%;
 }
 
 .titleBox {
@@ -32,28 +32,49 @@ body {
   background-color: black;
   
 }
-
 .about {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   color: white;
   text-align: justify;
-  justify-self: center;
+  justify-content: center;
+  /* align-items: center; */
   min-height: 10rem;
-  /* max-width:50rem; */
+  width: 100%;
 
 }
-.motto_first{
-  max-width: 70vw;
-  justify-self: center;
-  align-self: center;
+.greetings {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
+  align-items: center;
   justify-content: center;
+  border: solid white 2px;
+  height: 15rem;
+  width: 20rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+.aboutContent {
+  text-align: justify;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 45rem;
+}
+.motto_first{
+  text-align: justify;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: dotted white 3px;
 }
 .motto {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   color: white;
   padding: 1rem 1rem;
   text-align: center;
@@ -62,6 +83,7 @@ body {
   justify-content: center;
   min-height: 15rem;
   width: 100%;
+  
 }
 
 .history {
@@ -73,24 +95,25 @@ body {
   min-height: 15rem;
 }
 .bio {
+  width: 100%;
+  margin: 1rem 0;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-content: center;
+  flex-flow: row wrap;
+  justify-content: center; 
 }
-.bioContent {
+.bio_description {
+ width: 45rem; 
+
+}
+.img_HShot {
   padding: 1rem;
-  margin: 1rem 1rem;
-  max-width: 60rem;
-  height: auto;
-  display: flex;
-  flex-flow: column wrap;
-  color: white;
+  justify-self: center;
+  border: solid white 3px;
+  align-self: center;
+  height: 20rem;
+  width: 23rem;
 }
-.projectCards {
-  display: flex;
-  align-items: center;
- }
+
  .cardHead {
    justify-content: center;
    padding: 1rem;
@@ -101,17 +124,6 @@ body {
    padding: 1rem;
  }
 
-.img_HShot {
-  /* float: left; */
-  padding: 1rem;
-  /* border-radius: 55%; */
-  
-}
-.shortBio {
-  text-align:justify;
-  padding: 1rem 1rem;
-  
-}
 .twitters {
   text-align: center;
   min-height: 40rem;
@@ -135,11 +147,21 @@ body {
   justify-content: space-around;
 
 }
-
+.radioStyle {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
 .radioBtn {
   display: flex;
+  flex-flow: column;
   justify-content: center;
   padding: 1rem;
+  margin: 1rem;
+  background-color: rgb(255, 255, 255);
+  border: solid white 3px;
+  border-radius: 5px;
+  min-width: 15rem;
 }
 .headerCont {
  margin: 2rem;
@@ -253,10 +275,7 @@ a.email:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.cardContainer {
-  justify-content: center;
+  min-height: 70vh;
   
 }
 .faqCard {
@@ -465,5 +484,5 @@ a.businessTitle:hover {
     padding: 1rem;
     margin: 0;
   }
- 
+  
 }
