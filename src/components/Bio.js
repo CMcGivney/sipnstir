@@ -1,15 +1,15 @@
 import React from "react";
-import {SimpleImg} from "react-simple-img"
+
 
 const Bio = () => (
   <section className="bio">
    
-    <SimpleImg
+    <img
       src="https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,q_auto/v1600536030/sipnstir/headShot_yoqfib.jpg"
       alt="Head shot of sean palmer the founder"
       className="img_HShot"
-      height={250}
       width={300}
+      height={270} 
     />
     <div className="bio_description">
       <h3 className="cardHead" style={{ color: "white" }}>
