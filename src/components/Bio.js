@@ -1,12 +1,15 @@
 import React from "react";
+import {SimpleImg} from "react-simple-img"
 
 const Bio = () => (
   <section className="bio">
    
-    <img
+    <SimpleImg
       src="https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,q_auto/v1600536030/sipnstir/headShot_yoqfib.jpg"
       alt="Head shot of sean palmer the founder"
       className="img_HShot"
+      height={250}
+      width={300}
     />
     <div className="bio_description">
       <h3 className="cardHead" style={{ color: "white" }}>
@@ -17,7 +20,7 @@ const Bio = () => (
         Starting in Maryland, busing tables to earn money in high school for
         snowboard trips, to Park City’s Farm Restaurant at Canyons Village to
         San Francisco’s famed fine dining restaurant,{" "}
-        <a href="http://www.sprucesf.com/" alt="Link to Spurce SF restaurant">
+        <a href="http://www.sprucesf.com/" alt="Link to Spruce SF restaurant">
           Spruce
         </a>
         , and back again to Utah. When returning to Park City in 2015 he was

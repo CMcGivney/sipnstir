@@ -25,8 +25,8 @@ const NavBarContent = () => {
       <header style={navStyles}>
         <NavLink to="/" name="Home" id="home">
           <img
-            height="90rem"
-            width="90rem"
+            height="75"
+            width="140"
             src="https://res.cloudinary.com/cmmc/image/upload/c_scale,dpr_auto,f_auto,q_auto,w_996/v1600533758/sipnstir/Sip_Stir_Black_qqkxj9.png"
             alt="Sip & Stir Logo"
           />

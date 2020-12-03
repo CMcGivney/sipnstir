@@ -110,8 +110,6 @@ body, html {
   justify-self: center;
   border: solid white 3px;
   align-self: center;
-  height: 20rem;
-  width: 23rem;
 }
 
  .cardHead {
@@ -124,13 +122,6 @@ body, html {
    padding: 1rem;
  }
 
-.twitters {
-  text-align: center;
-  min-height: 40rem;
-  width: auto;
-  padding: 1rem;
-  color: white;
-}
 
 /*Contact Page Style & Layout*/
 .contact {
