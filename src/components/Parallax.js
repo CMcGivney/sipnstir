@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Parallax } from "react-parallax";
 import UseWindowSize from "../Hooks/useWindowSize.js";
 import Cocktail from "../Images/cocktail.JPG";
@@ -17,11 +17,11 @@ const insideStyles = {
 };
 
 const ParaImage = () => {
+  // this hook is being used to set the w/h for mobile logo size
   const size = UseWindowSize();
-
-  const setHeight = size.width <= 414 ? 209 : 380;
-  const setWidth = size.width <= 414 ? 345.05 : 604.48;
-    
+  const setHeight = size.width <= 581 ? 209 : 380;
+  const setWidth = size.width <= 581 ? 345.05 : 604.48;
+   
   return (
     <Parallax
       bgImage={Cocktail}
