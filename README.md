@@ -1,3 +1,11 @@
+This project is going slow. Working with a client that is pretty busy and is just starting this new business venture. 
+
+Todos:
+Refactoring is needed.
+Incorporate new photos.
+Content needs more keywords from client.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
