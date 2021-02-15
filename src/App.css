@@ -457,6 +457,20 @@ a.businessTitle:hover {
 .dropdown_menu-trigger img {
   border-radius: 90px;
 }
+/* gallery page css */
+.galleryImgContainer {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.galleryImages {
+  margin: .5rem;
+  border: 1px solid black 
+}
+
 @media screen and (max-width: 480px) {
   .srvContent {
     display: flex;
