@@ -54,6 +54,7 @@ const ImageProvider = ({ children }) => {
       this.imageAlt = imageAlt;
     }
   }
+  //wine array creation from wine class constructor
   let wineArray = [];
   let one_wine,
     two_wine,
@@ -84,6 +85,7 @@ const ImageProvider = ({ children }) => {
     eight_wine
   );
 
+//food array creation from food class constructor
   let foodArray = [];
   let one_food,
     two_food,
@@ -123,6 +125,7 @@ const ImageProvider = ({ children }) => {
     eleven_food
   );
 
+//cocktail array creation with class cocktail constructor
   let cocktailArray = [];
   let one_cocktail,
     two_cocktail,

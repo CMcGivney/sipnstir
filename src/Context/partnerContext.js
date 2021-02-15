@@ -1,5 +1,6 @@
 import React, { createContext } from "react";
 import Logo from "../Images/Sip&Stir_noBackground.png";
+
 const PartnerContext = createContext();
 
 const BusinessProvider = ({ children }) => {
@@ -13,7 +14,12 @@ const BusinessProvider = ({ children }) => {
     }
   }
   let partnerArray = [];
-  let onePartner, twoPartner, threePartner, fourPartner, fivePartner, sixPartner;
+  let onePartner,
+    twoPartner,
+    threePartner,
+    fourPartner,
+    fivePartner,
+    sixPartner;
 
   onePartner = new Partner(
     "Hidden Peak Dining",
@@ -22,7 +28,6 @@ const BusinessProvider = ({ children }) => {
     Logo,
     "this is a logo for the company"
   );
-  partnerArray.push(onePartner);
 
   twoPartner = new Partner(
     "Partner Two",
@@ -31,7 +36,6 @@ const BusinessProvider = ({ children }) => {
     Logo,
     "this is a logo for the company"
   );
-  partnerArray.push(twoPartner);
 
   threePartner = new Partner(
     "Partner Three",
@@ -40,7 +44,6 @@ const BusinessProvider = ({ children }) => {
     Logo,
     "this is an image of the logo"
   );
-  partnerArray.push(threePartner);
 
   fourPartner = new Partner(
     "Partner Four",
@@ -49,7 +52,6 @@ const BusinessProvider = ({ children }) => {
     Logo,
     "this is a logo for the company"
   );
-  partnerArray.push(fourPartner);
 
   fivePartner = new Partner(
     "Partner Five",
@@ -58,7 +60,6 @@ const BusinessProvider = ({ children }) => {
     Logo,
     "this is a logo for the company"
   );
-  partnerArray.push(fivePartner);
 
   sixPartner = new Partner(
     "Partner Six",
@@ -67,7 +68,14 @@ const BusinessProvider = ({ children }) => {
     Logo,
     "this is a logo for the company"
   );
-  partnerArray.push(sixPartner);
+  partnerArray.push(
+    onePartner,
+    twoPartner,
+    threePartner,
+    fourPartner,
+    fivePartner,
+    sixPartner
+  );
 
   return (
     <PartnerContext.Provider value={{ partnerArray }}>

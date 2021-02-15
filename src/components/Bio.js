@@ -1,14 +1,16 @@
 import React from "react";
-
+import HeadShot from '../Images/cocktails/sean_old_handle_bar.jpeg'
+import { SimpleImg } from "react-simple-img"; 
+// "https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,q_auto/v1600536030/sipnstir/headShot_yoqfib.jpg"
 
 const Bio = () => (
   <section className="bio">
    
-    <img
-      src="https://res.cloudinary.com/cmmc/image/upload/dpr_auto,f_auto,q_auto/v1600536030/sipnstir/headShot_yoqfib.jpg"
+    <SimpleImg
+      src={HeadShot}
       alt="Head shot of sean palmer the founder"
       className="img_HShot"
-      width={300}
+      width={350}
       height={270} 
     />
     <div className="bio_description">

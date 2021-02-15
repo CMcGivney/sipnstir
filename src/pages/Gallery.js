@@ -29,7 +29,7 @@ const GalleryComponent = () => {
         <div className="galleryImgContainer">
         {foodArray.map((img, index) => (
           <div  key={index}>
-            <img
+            <SimpleImg
               className="galleryImages"
               src={img.image}
               alt={img.imageAlt}
@@ -43,7 +43,7 @@ const GalleryComponent = () => {
         <div className="galleryImgContainer">
         {wineArray.map((img, index) => (
           <div  key={index}>
-            <img
+            <SimpleImg
               className="galleryImages"
               src={img.image}
               alt={img.imageAlt}

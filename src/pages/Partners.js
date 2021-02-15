@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
+
 import NavBar from "../components/NavBar.js";
+
 import { PartnerContext, BusinessProvider } from "../Context/partnerContext.js";
 
 const PartnersComponent = () => {
