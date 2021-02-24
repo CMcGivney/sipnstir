@@ -84,7 +84,7 @@ class ContactForm extends React.Component {
         "sipnstir",
         "sipnstir",
         templateParams,
-        "user_DPXyyf8OCsq80vNDZsRU8"
+        process.env.REACT_APP_EMAILJS
       )
       .then(
         (response) => {
