@@ -42,9 +42,9 @@ const NavBarContent = () => {
           <NavLink style={navItems} exact to="/Services" name="Services" id="Services">
             Services
           </NavLink>
-          <NavLink style={navItems} exact to="/Gallery" name="Gallery" id="Gallery">
+          {/* <NavLink style={navItems} exact to="/Gallery" name="Gallery" id="Gallery">
             Gallery
-          </NavLink>
+          </NavLink> */}
           {/* <NavLink style={navItems} exact to="/Partners" name="Partners" id="Partners">
             Partners
           </NavLink> */}
