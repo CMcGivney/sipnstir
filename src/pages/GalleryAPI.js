@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { CloudinaryContext, Transformation, Image } from "cloudinary-react";
+import { CloudinaryContext, Image } from "cloudinary-react";
 import NavBar from "../components/NavBar";
 const GalleryApi = () => {
   const [cocktailImages, setCocktailImages] = useState([]);
@@ -12,7 +12,6 @@ const GalleryApi = () => {
       await axios
         .get("https://res.cloudinary.com/cmmc/image/list/wine.json")
         .then((res) => {
-          console.log(res.data.resources);
           setWineImages(res.data.resources);
         })
         .catch((error) => {
@@ -26,7 +25,6 @@ const GalleryApi = () => {
       await axios
         .get("https://res.cloudinary.com/cmmc/image/list/food.json")
         .then((res) => {
-          console.log(res.data.resources);
           setFoodImages(res.data.resources);
         })
         .catch((error) => {
@@ -40,7 +38,6 @@ const GalleryApi = () => {
       await axios
         .get("https://res.cloudinary.com/cmmc/image/list/cocktail.json")
         .then((res) => {
-          console.log(res.data.resources);
           setCocktailImages(res.data.resources);
         })
         .catch((error) => {
