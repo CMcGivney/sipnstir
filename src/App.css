@@ -458,7 +458,6 @@ a.businessTitle:hover {
 }
 /* gallery page css */
 .galleryImgContainer {
-  height: auto;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
