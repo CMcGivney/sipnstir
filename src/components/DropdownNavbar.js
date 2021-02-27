@@ -41,9 +41,9 @@ const DropDownMenu = () => {
             <li>
               <a href="/Services">Services</a>
             </li>
-            {/* <li>
+            <li>
               <a href="/Gallery">Gallery</a>
-            </li> */}
+            </li>
             {/* <li>
               <a href="/Partners">Partners</a>
             </li> */}
