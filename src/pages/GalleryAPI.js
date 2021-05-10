@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { CloudinaryContext, Image } from "cloudinary-react";
-import NavBar from "../components/NavBar";
+
 const GalleryApi = () => {
   const [cocktailImages, setCocktailImages] = useState([]);
   const [wineImages, setWineImages] = useState([]);
@@ -48,8 +48,7 @@ const GalleryApi = () => {
   }, []);
 
   return (
-    <>
-      <NavBar />
+    <section style={{marginTop: '7rem'}}>
       <CloudinaryContext cloudName="cmmc">
         <div className="galleryImgContainer">
           {cocktailImages
@@ -101,7 +100,7 @@ const GalleryApi = () => {
             : null}
         </div>
       </CloudinaryContext>
-    </>
+    </section>
   );
 };
 

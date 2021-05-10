@@ -1,7 +1,5 @@
 import React, { useContext } from "react";
 
-import NavBar from "../components/NavBar.js";
-
 import { PartnerContext, BusinessProvider } from "../Context/partnerContext.js";
 
 const PartnersComponent = () => {
@@ -9,7 +7,6 @@ const PartnersComponent = () => {
 
   return (
     <>
-      <NavBar />
       <h2 className="pageHeader">Our Delectable Dining Partners</h2>
       <div className="partnerContainer">
         {partnerArray.map((p, index) => (
@@ -22,7 +19,11 @@ const PartnersComponent = () => {
                 height="50rem"
               />
               <h3>
-                <a className="businessTitle" href={p.businessUrl} alt={p.bizTitle}>
+                <a
+                  className="businessTitle"
+                  href={p.businessUrl}
+                  alt={p.bizTitle}
+                >
                   {p.bizTitle}
                 </a>
               </h3>

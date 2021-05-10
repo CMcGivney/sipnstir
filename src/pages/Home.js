@@ -2,7 +2,6 @@ import React from "react";
 import Motto from "../components/Motto.js";
 import Bio from "../components/Bio.js";
 import About from "../components/About.js";
-import Nav from "../components/NavBar.js";
 // import Twitter from "./Twitter.js";
 import ParaImage from "../components/Parallax.js";
 import { Helmet } from "react-helmet";
@@ -21,7 +20,7 @@ const Home = () => {
           { property: "og:url", content: "https://sipandstirpc.com/" },
         ]}
       />
-      <Nav />
+      
       <ParaImage />
 
       <div className="homeContentGrid ">

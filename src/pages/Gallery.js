@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import NavBar from "../components/NavBar.js";
 import { SimpleImg } from "react-simple-img";
 
 import { ImageContext, ImageProvider } from "../Context/ImagesContext";
@@ -9,7 +8,7 @@ const GalleryComponent = () => {
 
   return (
     <>
-      <NavBar />
+      
       <div className="galleryImgContainer">
         {cocktailArray.map((img, index) => (
           <div key={index}>

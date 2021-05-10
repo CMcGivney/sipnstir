@@ -1,11 +1,8 @@
 import React from "react";
-import { h3 } from "semantic-ui-react";
-import NavBar from "../components/NavBar.js";
+
 
 const Services = () => (
-  <>
-    <NavBar />
-
+  <section className="services">
     <div className="SrvHeader">
       <h1 className="headerDiv">Services We Provide</h1>
     </div>
@@ -51,7 +48,7 @@ const Services = () => (
         </p>
       </div>
     </div>
-  </>
+  </section>
 );
 // Image by <a href="https://pixabay.com/users/FotografieLink-6316043/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2697945">Igor Link</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2697945">Pixabay</a>
 export default Services;
