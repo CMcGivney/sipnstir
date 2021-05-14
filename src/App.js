@@ -17,7 +17,7 @@ import NoMatch from "./pages/NoMatch";
 
 function App() {
   ReactGA.initialize("G-TTD6VHM4G0");
-
+ 
   const tagManagerArgs = {
     gtmId: "GTM-MPJMMFW",
   };

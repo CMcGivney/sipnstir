@@ -2,7 +2,6 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import { Form, Select } from "semantic-ui-react";
 import emailjs from "emailjs-com";
-require("dotenv").config();
 
 class ContactForm extends React.Component {
   state = {
@@ -78,34 +77,28 @@ class ContactForm extends React.Component {
       glassware: glassware,
       typeOfEvent: typeOfEvent,
     };
+    const EMAILJS_KEY = process.env.REACT_APP_EMAILJS_KEY;
 
-    emailjs
-      .send(
-        "sipnstir",
-        "sipnstir",
-        templateParams,
-        process.env.REACT_APP_EMAILJS
-      )
-      .then(
-        (response) => {
-          if (response.status === 200) {
-            this.resetForm();
-          }
-          console.log("SUCCESS!", response.status, response.text);
-        },
-        (err) => {
-          if (err) {
-            alert("Sorry Message Failed at this time");
-            this.handleFailToSend();
-          }
-          console.log("FAILED...", err);
+    emailjs.send("sipnstir", "sipnstir", templateParams, EMAILJS_KEY).then(
+      (response) => {
+        if (response.status === 200) {
+          this.resetForm();
         }
-      );
+        console.log("SUCCESS!", response.status, response.text);
+      },
+      (err) => {
+        if (err) {
+          alert("Sorry Message Failed at this time");
+          this.handleFailToSend();
+        }
+        console.log("FAILED...", err);
+      }
+    );
   };
 
   render() {
     return (
-      <Form onSubmit={this.handleSubmit} style={{margin: '0 1rem'}}>
+      <Form onSubmit={this.handleSubmit} style={{ margin: "0 1rem" }}>
         <Form.Group widths="equal" className="formComponents">
           <Form.Input
             autoFocus
@@ -165,8 +158,8 @@ class ContactForm extends React.Component {
             onChange={this.handleChange}
             required
           />
-          </Form.Group>
-        
+        </Form.Group>
+
         <Form.Group widths="equal" className="formComponents">
           <Form.Input
             name="startTime"
@@ -194,49 +187,53 @@ class ContactForm extends React.Component {
           ></Form.Input>
         </Form.Group>
         <Form.Group className="radioStyle">
-        <div className="radioBtn">
-          <label style={{textDecoration: 'underline', margin: ".5rem"}}>Mobile Bar Rental?</label>
-          <Form.Radio
-            label="Yes"
-            type="radio"
-            name="mobileBar"
-            value="yes"
-            id="yes"
-            checked={this.state.mobileBar === "yes"}
-            onChange={this.handleChange}
-          />
-          <Form.Radio
-            label="No"
-            type="radio"
-            name="mobileBar"
-            value="no"
-            id="no"
-            checked={this.state.mobileBar === "no"}
-            onChange={this.handleChange}
-          />
+          <div className="radioBtn">
+            <label style={{ textDecoration: "underline", margin: ".5rem" }}>
+              Mobile Bar Rental?
+            </label>
+            <Form.Radio
+              label="Yes"
+              type="radio"
+              name="mobileBar"
+              value="yes"
+              id="yes"
+              checked={this.state.mobileBar === "yes"}
+              onChange={this.handleChange}
+            />
+            <Form.Radio
+              label="No"
+              type="radio"
+              name="mobileBar"
+              value="no"
+              id="no"
+              checked={this.state.mobileBar === "no"}
+              onChange={this.handleChange}
+            />
           </div>
-        {/* </Form.Group>
+          {/* </Form.Group>
         <Form.Group className="radioBtn"> */}
-        <div className="radioBtn">
-          <label style={{textDecoration: 'underline', margin: ".5rem"}}>Glassware Choice</label>
-          <Form.Radio
-            label="Disposable"
-            type="radio"
-            name="glassware"
-            value="Disposable"
-            id="Disposable"
-            checked={this.state.glassware === "Disposable"}
-            onChange={this.handleChange}
-          />
-          <Form.Radio
-            label="Glass"
-            type="radio"
-            name="glassware"
-            value="Glass"
-            id="Glass"
-            checked={this.state.glassware === "Glass"}
-            onChange={this.handleChange}
-          />
+          <div className="radioBtn">
+            <label style={{ textDecoration: "underline", margin: ".5rem" }}>
+              Glassware Choice
+            </label>
+            <Form.Radio
+              label="Disposable"
+              type="radio"
+              name="glassware"
+              value="Disposable"
+              id="Disposable"
+              checked={this.state.glassware === "Disposable"}
+              onChange={this.handleChange}
+            />
+            <Form.Radio
+              label="Glass"
+              type="radio"
+              name="glassware"
+              value="Glass"
+              id="Glass"
+              checked={this.state.glassware === "Glass"}
+              onChange={this.handleChange}
+            />
           </div>
         </Form.Group>
         <Form.TextArea
