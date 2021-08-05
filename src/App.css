@@ -1,5 +1,6 @@
-body, html {
-  background-color: #9f99a0; 
+body,
+html {
+  background-color: #9f99a0;
   width: 100%;
 }
 
@@ -10,14 +11,13 @@ body, html {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  
 }
 
 .noMatchTitle {
   background-color: rgba(173, 166, 166, 0.836);
   opacity: 0.9;
   width: 100%;
-  height:100vh;
+  height: 100vh;
   padding: 10rem 1rem 0 1rem;
   text-align: center;
   margin: 0 0 0 0;
@@ -28,9 +28,8 @@ body, html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 100%;  
+  width: 100%;
   background-color: black;
-  
 }
 .about {
   display: flex;
@@ -41,7 +40,6 @@ body, html {
   /* align-items: center; */
   min-height: 10rem;
   width: 100%;
-
 }
 .greetings {
   display: flex;
@@ -63,7 +61,7 @@ body, html {
   padding: 1rem;
   width: 45rem;
 }
-.motto_first{
+.motto_first {
   text-align: justify;
   display: flex;
   flex-flow: column wrap;
@@ -83,11 +81,10 @@ body, html {
   justify-content: center;
   min-height: 15rem;
   width: 100%;
-  
 }
 
 .history {
-  color:white;
+  color: white;
   max-width: 50rem;
   padding: 1rem 1rem;
   text-align: justify;
@@ -99,29 +96,26 @@ body, html {
   margin: 1rem 0;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center; 
+  justify-content: center;
 }
 .bio_description {
- width: 45rem; 
-
+  width: 45rem;
 }
 .img_HShot {
   justify-self: center;
   border: solid white 3px;
   align-self: center;
-
 }
 
- .cardHead {
-   justify-content: center;
-   padding: 1rem;
- }
- .cardMeta {
-   text-align: justify;
-   justify-content: center;
-   padding: 1rem;
- }
-
+.cardHead {
+  justify-content: center;
+  padding: 1rem;
+}
+.cardMeta {
+  text-align: justify;
+  justify-content: center;
+  padding: 1rem;
+}
 
 /*Contact Page Style & Layout*/
 .contact {
@@ -137,7 +131,6 @@ body, html {
 .formComponents {
   display: flex;
   justify-content: space-around;
-
 }
 .radioStyle {
   display: flex;
@@ -156,63 +149,62 @@ body, html {
   min-width: 15rem;
 }
 .headerCont {
- margin: 2rem;
+  margin: 2rem;
 }
 .socialFollows {
-  padding: 1em ;
+  padding: 1em;
 }
 /* styles for the social media icons */
 .twitter {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 .instagram {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 a.social {
   margin: 0 1rem;
   transition: transform 250ms;
   display: inline-block;
- }
- 
- a.social:hover {
- transform: translateY(-2px); 
- color: chartreuse;
- }
- 
- a.facebook {
- color: #4968ad;
- }
- 
- a.twitter {
- color: #49a1eb;
- }
- 
- a.instagram {
- color: black;
- }
- /*Services Page Layout*/
- .services{
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+  color: chartreuse;
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.instagram {
+  color: black;
+}
+/*Services Page Layout*/
+.services {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
   width: 100%;
- 
- }
- .srvHeader{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   background-image: url("https://res.cloudinary.com/cmmc/image/upload/q_auto,f_auto/v1600536040/sipnstir/tableSetting_anoade.jpg");
-   background-size: cover;
-   background-repeat: no-repeat;
-   width: 100%;
-   height: 100vh;
-   color: white;
- }
- .headerDiv {
+}
+.srvHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("https://res.cloudinary.com/cmmc/image/upload/q_auto,f_auto/v1600536040/sipnstir/tableSetting_anoade.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+.headerDiv {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,36 +213,35 @@ a.social {
   border-radius: 55%;
   opacity: 0.7;
   padding: 1rem;
-  height: 250px; 
+  height: 250px;
   width: 250px;
- }
+}
 
- .srvContent {
-   display: flex;
-   flex-flow: row wrap;
-   /* min-height: 25rem; */
-   width: 100%;
-   margin-top: 1.5rem;
-   justify-items: center;
-   justify-content: center;
-   align-items: center;
- }
+.srvContent {
+  display: flex;
+  flex-flow: row wrap;
+  /* min-height: 25rem; */
+  width: 100%;
+  margin-top: 1.5rem;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
 
- .srvColumn {
-   min-height: 15rem;
-   width: 35rem;
-   text-align: justify;
-   justify-self: center;
-   align-self: center;
-   margin: 1rem 1rem;
-   padding: 1rem;
-   /* border: black solid 2px; */
- }
- /*Email Style*/
+.srvColumn {
+  min-height: 15rem;
+  width: 35rem;
+  text-align: justify;
+  justify-self: center;
+  align-self: center;
+  margin: 1rem 1rem;
+  padding: 1rem;
+  /* border: black solid 2px; */
+}
+/*Email Style*/
 .emailBox {
   text-align: center;
-  padding: .5em;
-
+  padding: 0.5em;
 }
 
 a.email {
@@ -272,18 +263,18 @@ a.email:hover {
   min-height: 70vh;
 }
 .faqCard {
- display: flex;
- flex-flow: column nowrap;
- justify-content: center;
- align-items: center;
- text-align: center;
- border: solid black 3px;
- border-radius: 55px;
- box-shadow: 5px 5px 5px black;
- background-color: rgb(224, 223, 223);
- min-height: 20rem;
- width: 25rem;
- margin: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: solid black 3px;
+  border-radius: 55px;
+  box-shadow: 5px 5px 5px black;
+  background-color: rgb(224, 223, 223);
+  min-height: 20rem;
+  width: 25rem;
+  margin: 1rem;
 }
 .cardHead {
   justify-content: center;
@@ -299,12 +290,11 @@ a.email:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #212c0f;
+  background-color: #215c0f;
   display: flex;
   width: 100%;
   flex-flow: column wrap;
   padding: 1em;
-  
 }
 
 .footerData {
@@ -324,20 +314,16 @@ a.email:hover {
 }
 
 .mainFooter {
-  
   margin: 1rem;
-
 }
 .phoneNum {
-  
-  padding: .5em;
+  padding: 0.5em;
 }
 .poweredBy {
-  
-  padding: .5em;
+  padding: 0.5em;
 }
-.bizAddress{
-  padding: .5em;
+.bizAddress {
+  padding: 0.5em;
 }
 /* Partners */
 .pageHeader {
@@ -355,7 +341,7 @@ a.email:hover {
   margin-top: 5rem;
 }
 .partnerCard {
-  display: flex; 
+  display: flex;
   flex-flow: column nowrap;
   align-items: center;
   padding: 1rem;
@@ -363,11 +349,10 @@ a.email:hover {
   width: 35rem;
   min-height: 30rem;
   text-align: justify;
-  border: black solid .25rem;
+  border: black solid 0.25rem;
   border-radius: 15px;
   box-shadow: 5px 5px 5px black;
   background-color: rgb(138, 138, 135);
-  
 }
 .cardHeader {
   display: flex;
@@ -375,17 +360,16 @@ a.email:hover {
   justify-content: space-between;
   text-decoration: underline;
   width: 100%;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
 }
 .description {
   width: 90%;
-
 }
 a.businessTitle {
   color: black;
 }
 a.businessTitle:hover {
- color: rgb(50, 50, 151);
+  color: rgb(50, 50, 151);
 }
 /*DropDown Menu Styles*/
 .menu-container {
@@ -441,7 +425,7 @@ a.businessTitle:hover {
   border: none;
   vertical-align: middle;
   transition: box-shadow 0.4s ease;
-  margin: 0 1em 0 0
+  margin: 0 1em 0 0;
 }
 
 .dropdown_menu-trigger:hover {
@@ -468,12 +452,11 @@ a.businessTitle:hover {
   margin: 1rem 0;
 }
 .galleryImages {
-  margin: .5rem;
-  border: 1px solid black 
+  margin: 0.5rem;
+  border: 1px solid black;
 }
 
 @media screen and (max-width: 480px) {
-  
   .srvContent {
     display: flex;
     flex-flow: column wrap;
@@ -492,5 +475,4 @@ a.businessTitle:hover {
     padding: 1rem;
     margin: 0;
   }
-  
 }

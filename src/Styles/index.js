@@ -1,16 +1,16 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const NavbarBase = styled.nav`
-  background: #212c0f;
+  background: #215c0f;
   color: white;
 
   a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    margin: 1rem
+    margin: 1rem;
   }
- 
+
   line-height: 1;
   height: 6rem;
 
@@ -24,24 +24,18 @@ const NavbarBase = styled.nav`
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
-`
+`;
 
 export const Navbar = styled(NavbarBase)`
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.65);
 
-  visibility: ${props => (props.show ? 'visible' : 'hidden')};
-  transition: all 200ms ${props => (props.show ? 'ease-in' : 'ease-out')};
-  transform: ${props => (props.show ? 'none' : 'translate(0, -100%)')};
-`
-
+  visibility: ${(props) => (props.show ? "visible" : "hidden")};
+  transition: all 200ms ${(props) => (props.show ? "ease-in" : "ease-out")};
+  transform: ${(props) => (props.show ? "none" : "translate(0, -100%)")};
+`;
 
 export const Footer = styled(NavbarBase)`
   top: unset;
   bottom: 0;
   justify-content: center;
-`
-
-
-
-
-
+`;
